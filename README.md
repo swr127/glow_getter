@@ -69,12 +69,12 @@ The digital assets used to create this project have full licensing and permissio
 <a href="https://imgur.com/urEWlDy"><img src="https://i.imgur.com/urEWlDy.png" title="source: imgur.com" /></a>
 
 ### Endpoints
--- Do I need endpoints for the cart?
 
 - GET `/users`
 	- Index route returning an array of all users 
 - GET `/users/:id`
 	- Show route for a user requested by ID
+	- Show all products associated with user ID
 - POST `/users`
 	- Create a new user
 - PUT `/users/:id/`
@@ -85,6 +85,7 @@ The digital assets used to create this project have full licensing and permissio
 	- Index route returning an array of all products 
 - GET `/products/:id`
 	- Show route for a product requested by ID
+	- Show all users associated with product ID
 - POST `/products`
 	- Create a new product
 - PUT `/products/:id/`
@@ -101,7 +102,7 @@ The digital assets used to create this project have full licensing and permissio
 |Mar 5th | Create project pitch for approval              |
 |Mar 6th | Build database, endpoints, and controllers on Rails   |
 |Mar 7th | Create user auth on Rails          |
-|Mar 8th | Rest day         |
+|Mar 8th | R&R         |
 |Mar 9th | Build components and routes on React           |
 |Mar 10th| Build full CRUD and test with user auth                  |
 |Mar 11th| CSS styling and responsive design              |
@@ -113,32 +114,30 @@ The digital assets used to create this project have full licensing and permissio
 | Task                | Priority | Estimated Time | Actual Time |
 | ------------------- | :------: | :------------: | :---------: |
 | Set Up Rails App   |    H     |     2 hrs     |        |
-| Install dependencies  |    H     |     1 hr      |       |
-| Create models and migrations  |    H     |     2 hrs      |     TBD     |
+| Create models and migrations  |    H     |     1 hr      |     TBD     |
 | Create database with mock data  |    H     |     2 hrs      |     TBD     |
 | Seed database with mock data  |    H     |     1 hr     |     TBD     |
-| Create controllers  |    H     |     2 hrs      |     TBD     |
-| Create routes  |    H     |     2 hrs      |     TBD     |
-| Create user auth on back-end |    H     |     8 hrs      |     TBD     |
-| Test back-end CRUD functionality  |    H     |     4 hrs      |     TBD     |
+| Create controllers  |    H     |     1 hr      |     TBD     |
+| Create routes  |    H     |     1 hr      |     TBD     |
+| Create user auth on back-end |    H     |     6 hrs      |     TBD     |
+| Test back-end CRUD functionality  |    H     |     2 hrs      |     TBD     |
 | Set up React App  |    H     |     2 hrs      |     TBD     |
-| Install dependencies  |    H     |    1 hr      |     TBD     |
-| Create react router  |    H     |     2 hrs      |     TBD     |
-| Create components  |    H     |     6 hrs      |     TBD     |
+| Create react router  |    H     |     1 hr      |     TBD     |
+| Create components  |    H     |     4 hrs      |     TBD     |
 | Create Axios call to back-end  |    H     |     4 hrs      |     TBD     |
 | Pass state to stateful components  |    H     |     2 hrs      |     TBD     |
 | Enable user auth on front-end  |    H     |     6 hrs      |     TBD     |
 | Test front-end CRUD functionality  |    H     |     2 hrs      |     TBD     |
-| CSS styling and responsive design  |    H     |     16 hrs      |     TBD     |
+| CSS styling and responsive design  |    H     |     12 hrs      |     TBD     |
 | Deploy application on Heroku  |    M     |     2 hrs      |     TBD     |
 | Make necessary post-deployment changes  |    L     |     1 hr     |     TBD     |
-| TOTAL               |          |     WIP     |     TBD     |
+| TOTAL               |          |     52 hours     |     TBD     |
 
 ## Post-MVP
 
 - Create admin access in user auth 
-- Add a customer service contact form 
-- Use SCSS for styling 
+- Additional CSS styling (react hamburger menu, react slideshow)
+- Try out some SCSS for styling 
 
 ## Project Change Log
 
