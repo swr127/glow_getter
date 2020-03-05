@@ -12,7 +12,18 @@ The digital assets used to create this project have full licensing and permissio
 
 ## Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views
+### Homepage
+
+|  Desktop   | Mobile |
+| <a href="https://imgur.com/lIZjQvI"><img src="https://i.imgur.com/lIZjQvI.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/wrx7lBz"><img src="https://i.imgur.com/wrx7lBz.png" title="source: imgur.com" /></a> |
+
+### Sign up
+
+### Login
+
+### Shop
+
+### Cart
 
 ## MVP
 
@@ -57,7 +68,7 @@ The digital assets used to create this project have full licensing and permissio
 |    Nav       |   Y   | The Nav will contain the navlinks for home, login, register, and view cart  |
 |    Home      |   N   | The Home will show generic stylistic images on the homepage   |
 |    Login     |   Y   | The Login will enable a user to login to their account |
-|    Register  |   Y   | The Resgister will enable a user to regist for an account |
+|    Sign Up / Register  |   Y   | The Register will enable a user to regist for an account |
 |    Shop      |   Y   | The Shop will show all of the products in the database |
 |    Shop Product Card    |   Y   | The Shop Product Card will show information on the product from the database, and have an add to cart button |
 |    Cart    |   Y   | The Cart will show all of the products that a user has added to their cart |
@@ -113,7 +124,7 @@ The digital assets used to create this project have full licensing and permissio
 
 | Task                | Priority | Estimated Time | Actual Time |
 | ------------------- | :------: | :------------: | :---------: |
-| Set Up Rails App   |    H     |     2 hrs     |        |
+| Set Up Rails App   |    H     |     2 hrs     |    TBD    |
 | Create models and migrations  |    H     |     1 hr      |     TBD     |
 | Create database with mock data  |    H     |     2 hrs      |     TBD     |
 | Seed database with mock data  |    H     |     1 hr     |     TBD     |
