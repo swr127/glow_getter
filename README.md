@@ -74,15 +74,17 @@ The digital assets used to create this project have full licensing and permissio
 | :----------: | :---: | :--------------------------------------------------------------- |
 |    App       |   Y   | The App will make an Axios call and contain all the routes for the app |
 |    Header    |   Y   | The Header will show the app title and contain the navigation       |
-|    Nav       |   Y   | The Nav will contain the navlinks for home, login, register, and view cart  |
+|    Nav       |   Y   | The Nav will contain the navlinks for home, sign-up, login, shop, and view cart  |
 |    Home      |   N   | The Home will show generic stylistic images on the homepage   |
 |    Login     |   Y   | The Login will enable a user to login to their account |
-|    Sign Up / Register  |   Y   | The Register will enable a user to regist for an account |
+|    Sign Up / Register  |   Y   | The Sign Up / Register will enable a user to register for an account |
 |    Shop      |   Y   | The Shop will show all of the products in the database |
 |    Shop Product Card    |   Y   | The Shop Product Card will show information on the product from the database, and have an add to cart button |
+|    Add to Cart    |   Y   | The Add to Cart button will make an Axios call which will add a product to a users cart |
 |    Cart    |   Y   | The Cart will show all of the products that a user has added to their cart |
 |    Cart Product Card    |   Y   | The Cart Product Card will show information on the product from the database, and have a remove from cart botton |
-|    Footer    |   N   | The Foote will show my name and additional copyright information  |
+|    Remove from Cart    |   Y   | The Remove from Cart button will make an Axios call which will remove a product from a users cart |
+|    Footer    |   N   | The Footer will show my name and additional copyright information  |
 
 ## ERD Model
 
