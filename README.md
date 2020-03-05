@@ -99,7 +99,9 @@ The digital assets used to create this project have full licensing and permissio
 |  Day   | Deliverables                                   |
 | ------ | ---------------------------------------------- |
 |Mar 5th | Create project pitch for approval              |
-|Mar 6th | Build database, endpoints, and controllers with user auth on Rails          |
+|Mar 6th | Build database, endpoints, and controllers on Rails   |
+|Mar 7th | Create user auth on Rails          |
+|Mar 8th | Rest day         |
 |Mar 9th | Build components and routes on React           |
 |Mar 10th| Build full CRUD and test with user auth                  |
 |Mar 11th| CSS styling and responsive design              |
@@ -110,9 +112,27 @@ The digital assets used to create this project have full licensing and permissio
 
 | Task                | Priority | Estimated Time | Actual Time |
 | ------------------- | :------: | :------------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     TBD     |
-| TOTAL               |          |     6 hrs      |     TBD     |
+| Set Up Rails App   |    H     |     2 hrs     |        |
+| Install dependencies  |    H     |     1 hr      |       |
+| Create models and migrations  |    H     |     2 hrs      |     TBD     |
+| Create database with mock data  |    H     |     2 hrs      |     TBD     |
+| Seed database with mock data  |    H     |     1 hr     |     TBD     |
+| Create controllers  |    H     |     2 hrs      |     TBD     |
+| Create routes  |    H     |     2 hrs      |     TBD     |
+| Create user auth on back-end |    H     |     8 hrs      |     TBD     |
+| Test back-end CRUD functionality  |    H     |     4 hrs      |     TBD     |
+| Set up React App  |    H     |     2 hrs      |     TBD     |
+| Install dependencies  |    H     |    1 hr      |     TBD     |
+| Create react router  |    H     |     2 hrs      |     TBD     |
+| Create components  |    H     |     6 hrs      |     TBD     |
+| Create Axios call to back-end  |    H     |     4 hrs      |     TBD     |
+| Pass state to stateful components  |    H     |     2 hrs      |     TBD     |
+| Enable user auth on front-end  |    H     |     6 hrs      |     TBD     |
+| Test front-end CRUD functionality  |    H     |     2 hrs      |     TBD     |
+| CSS styling and responsive design  |    H     |     16 hrs      |     TBD     |
+| Deploy application on Heroku  |    M     |     2 hrs      |     TBD     |
+| Make necessary post-deployment changes  |    L     |     1 hr     |     TBD     |
+| TOTAL               |          |     WIP     |     TBD     |
 
 ## Post-MVP
 
