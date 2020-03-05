@@ -18,11 +18,21 @@ The digital assets used to create this project have full licensing and permissio
 
 ### Sign up
 
+<a href="https://imgur.com/rJJ5PC3"><img src="https://i.imgur.com/rJJ5PC3.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/N8iXsqf"><img src="https://i.imgur.com/N8iXsqf.png" title="source: imgur.com" /></a>
+
 ### Login
+
+<a href="https://imgur.com/DbiIDNY"><img src="https://i.imgur.com/DbiIDNY.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/LCDgLgX"><img src="https://i.imgur.com/LCDgLgX.png" title="source: imgur.com" /></a>
 
 ### Shop
 
+<a href="https://imgur.com/wrmgZsr"><img src="https://i.imgur.com/wrmgZsr.png" title="source: imgur.com" /></a>
+
 ### Cart
+
+<a href="https://imgur.com/8ABVC0O"><img src="https://i.imgur.com/8ABVC0O.png" title="source: imgur.com" /></a>
 
 ## MVP
 
