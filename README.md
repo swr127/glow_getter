@@ -8,7 +8,7 @@ Link: TBC
 
 ### Permissions
 
-The digital assets used to create this project have full licensing and permission from [Shutterstock](). All of the digital assets are stored locally and on [Imgur]().
+The digital assets used to create this project have full licensing and permission from [Shutterstock](https://www.shutterstock.com/home). All of the digital assets are stored locally and on [Imgur](https://imgur.com/).
 
 ## Wireframes
 
@@ -16,11 +16,19 @@ The digital assets used to create this project have full licensing and permissio
 
 ## MVP
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- A full-stack application with React on the front-end and Rails on the back-end
+	- React app with a minimum of 8 components
+	- React app using React Router 
+	- Rails server with RESTful JSON endpoints
+	- Rails server with a minimum of a user table and two additional tables 
+- A user authentication that permits a user to sign up and login
+	- When the user is logged in, they will be able to perform the following CRUD actions on their shopping cart
+		- Create = add products to cart
+		- Read = view products in cart
+		- Update = update quantity of products in cart
+		- Delete = delete products from cart 
+	- When the user is not logged in, they won't be able to perform the above CRUD actions on their shopping cart 
+- A responsvie design with a minimum of 2 views (desktop & mobile)
 
 ### MVP Client
 
@@ -32,11 +40,7 @@ The digital assets used to create this project have full licensing and permissio
 
 ### MVP Libraries
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-|      Rails       | _Lorem ipsum dolor sit amet, consectetur._ |
+`react-router-dom`, `reacts-slideshow`, `react-hamburger-menu`, `axios`, `nodemon`, `morgan`, `pg`, `cors`, `rails`
 
 ## React Component Hierarchy
 
@@ -69,6 +73,18 @@ The digital assets used to create this project have full licensing and permissio
 
 ## Planning
 
+### Schedule
+
+|  Day   | Deliverables                                   |
+| ------ | ---------------------------------------------- |
+|Mar 5th | Create project pitch for approval              |
+|Mar 6th | Build database and endpoints on Rails          |
+|Mar 9th | Build components and routes on React           |
+|Mar 10th| Build full CRUD and user auth                  |
+|Mar 11th| CSS styling and responsive design              |
+|Mar 12th| MVP, begin post-MVP                            |
+|Mar 13th| Final presentation                             | 
+
 ### Timeframes
 
 | Task                | Priority | Estimated Time | Actual Time |
@@ -77,28 +93,11 @@ The digital assets used to create this project have full licensing and permissio
 | Create CRUD Actions |    H     |     3 hrs      |     TBD     |
 | TOTAL               |          |     6 hrs      |     TBD     |
 
-### Schedule
-
-|  Day   | Deliverables                              |
-| ------ | ----------------------------------------- |
-|Mar 4th | project proposal worksheet / psuedocoding |
-|Mar 5th | project pitch / build out endpoints       |
-|Mar 6th | Build out front-end components            |
-|Mar 7th | OFF                                       |
-|Mar 8th | impliment user auth                       |
-|Mar 9th | styling                                   |
-|Mar 10th| MVP, begin post-MVP                       |
-|Mar 11th| post-MVP                                  |
-|Mar 12th| polishing                                 |
-|Mar 13th| final presentations                       |
-
 ## Post-MVP
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- Create admin access in user auth 
+- Add a customer service contact form 
+- Use SCSS for styling 
 
 ## Project Change Log
 
