@@ -14,8 +14,7 @@ The digital assets used to create this project have full licensing and permissio
 
 ### Homepage
 
-|  Desktop   | Mobile |
-| <a href="https://imgur.com/lIZjQvI"><img src="https://i.imgur.com/lIZjQvI.png" title="source: imgur.com" /></a> | <a href="https://imgur.com/wrx7lBz"><img src="https://i.imgur.com/wrx7lBz.png" title="source: imgur.com" /></a> |
+<a href="https://imgur.com/HCfJI1i"><img src="https://i.imgur.com/HCfJI1i.png" title="source: imgur.com" /></a>
 
 ### Sign up
 
@@ -53,7 +52,7 @@ The digital assets used to create this project have full licensing and permissio
 
 ### MVP Libraries
 
-`react-router-dom`, `reacts-slideshow`, `react-hamburger-menu`, `axios`, `nodemon`, `morgan`, `pg`, `cors`, `rails`
+`react-router-dom`, `reacts-slideshow`, `react-hamburger-menu`, `axios`, `pg`, `cors`, `rails`
 
 ## React Component Hierarchy
 
