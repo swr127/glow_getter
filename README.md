@@ -100,11 +100,11 @@ The digital assets used to create this project have full licensing and permissio
 |  Day   | Deliverables                                   |
 | ------ | ---------------------------------------------- |
 |Mar 5th | Create project pitch for approval              |
-|Mar 6th | Build database, endpoints, and controllers on Rails   |
+|Mar 6th | Create back-end with full CRUD on Rails    |
 |Mar 7th | Create user auth on Rails          |
 |Mar 8th | R&R         |
-|Mar 9th | Build components and routes on React           |
-|Mar 10th| Build full CRUD and test with user auth                  |
+|Mar 9th | Create front-end with full CRUD on React           |
+|Mar 10th| Test user authentication & full CRUD functionality on Rails and React |
 |Mar 11th| CSS styling and responsive design              |
 |Mar 12th| MVP, begin post-MVP                            |
 |Mar 13th| Final presentation                             | 
