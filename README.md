@@ -61,24 +61,37 @@ The digital assets used to create this project have full licensing and permissio
 |    Shop      |   Y   | The Shop will show all of the products in the database |
 |    Shop Product Card    |   Y   | The Shop Product Card will show information on the product from the database, and have an add to cart button |
 |    Cart    |   Y   | The Cart will show all of the products that a user has added to their cart |
-|    Cart Product Card    |   Y   | The Cart Product Card will show information on the product from the dataase, and have a remove from cart botton |
+|    Cart Product Card    |   Y   | The Cart Product Card will show information on the product from the database, and have a remove from cart botton |
 |    Footer    |   N   | The Foote will show my name and additional copyright information  |
 
 ## ERD Model
 
-> Use this section to display an image of a computer generated ERD model.
+<a href="https://imgur.com/urEWlDy"><img src="https://i.imgur.com/urEWlDy.png" title="source: imgur.com" /></a>
 
 ### Endpoints
+-- Do I need endpoints for the cart?
 
-- GET `/api/users`
-	- Index route returning an array of all Users and nested 'Likes'
-- GET `/api/users/:id`
+- GET `/users`
+	- Index route returning an array of all users 
+- GET `/users/:id`
 	- Show route for a user requested by ID
-- POST `/api/users`
-	- Create route for a new user
-- PUT `/api/users/:id/nominate
-  - Update a user by id to create an association to the ballots table
-
+- POST `/users`
+	- Create a new user
+- PUT `/users/:id/`
+	- Update a user by ID
+- DELETE `/users/:id/`
+	- Delete a user by ID
+- GET `/products`
+	- Index route returning an array of all products 
+- GET `/products/:id`
+	- Show route for a product requested by ID
+- POST `/products`
+	- Create a new product
+- PUT `/products/:id/`
+	- Update a user by ID
+- DELETE `/products/:id/`
+	- Delete a user by ID
+  
 ## Planning
 
 ### Schedule
