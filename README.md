@@ -17,17 +17,19 @@ The digital assets used to create this project have full licensing and permissio
 ## MVP
 
 - A full-stack application with React on the front-end and Rails on the back-end
-	- React app with a minimum of 8 components
+	- React app with the components listed in the React Component Hierarchy
 	- React app using React Router 
 	- Rails server with RESTful JSON endpoints
-	- Rails server with a minimum of a user table and two additional tables 
+	- Rails server with a user table, product table, and a join cart table
 - A user authentication that permits a user to sign up and login
-	- When the user is logged in, they will be able to perform the following CRUD actions on their shopping cart
-		- Create = add products to cart
-		- Read = view products in cart
-		- Update = update quantity of products in cart
+- A user experience that involves full CRUD
+	- When the user visits the homepage for the first time, they can sign up for an account and browse products
+		- Create = create an account
+		- Read = browse products 
+	- When the user is logged in, they will be able to perform the following actions on their shopping cart
+		- Update = add products to cart
 		- Delete = delete products from cart 
-	- When the user is not logged in, they won't be able to perform the above CRUD actions on their shopping cart 
+	- When the user is not logged in, they won't be able to perform the above actions on their shopping cart 
 - A responsvie design with a minimum of 2 views (desktop & mobile)
 
 ### MVP Client
@@ -44,17 +46,23 @@ The digital assets used to create this project have full licensing and permissio
 
 ## React Component Hierarchy
 
-![Dummy Link](url)
+<a href="https://imgur.com/UJqxVyA"><img src="https://i.imgur.com/UJqxVyA.png" title="source: imgur.com" /></a>
 
 ### Component Breakdown
 
 |  Component   | State | Description                                                      |
 | :----------: | :---: | :--------------------------------------------------------------- |
-|    Header    |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   y   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card |   n   | _The cards will render the post info via props._                 |
-|    Footer    |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    App       |   Y   | The App will make an Axios call and contain all the routes for the app |
+|    Header    |   Y   | The Header will show the app title and contain the navigation       |
+|    Nav       |   Y   | The Nav will contain the navlinks for home, login, register, and view cart  |
+|    Home      |   N   | The Home will show generic stylistic images on the homepage   |
+|    Login     |   Y   | The Login will enable a user to login to their account |
+|    Register  |   Y   | The Resgister will enable a user to regist for an account |
+|    Shop      |   Y   | The Shop will show all of the products in the database |
+|    Shop Product Card    |   Y   | The Shop Product Card will show information on the product from the database, and have an add to cart button |
+|    Cart    |   Y   | The Cart will show all of the products that a user has added to their cart |
+|    Cart Product Card    |   Y   | The Cart Product Card will show information on the product from the dataase, and have a remove from cart botton |
+|    Footer    |   N   | The Foote will show my name and additional copyright information  |
 
 ## ERD Model
 
