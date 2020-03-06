@@ -158,12 +158,13 @@ The digital assets used to create this project have full licensing and permissio
 ## Post-MVP
 
 - Create admin access in user auth 
+- Create product page 
 - Additional CSS styling (react hamburger menu, react slideshow)
 - Try out some SCSS for styling 
 
 ## Project Change Log
 
-> This section should be expanded and revised as you work on your project.
+- Adjusted ERD so Product Table has product_img = string 
 
 ## Code Showcase
 
