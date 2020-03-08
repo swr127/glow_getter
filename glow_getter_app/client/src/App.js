@@ -16,33 +16,28 @@ class App extends Component {
     super(props)
 
     this.state = {
-      products: [],
       userProducts: []
     }
   }
 
-  async componentDidMount() {
-    try {
-      // Make Axios call to retrieve all products from back-end
-      const response = await Axios (`${apiUrl}/products`)
-      this.setState({ products: response.data.products })
+  // Calling getUserProducts() to retrieve all products that user added to cart
+  // async componentDidMount() {
+  //   try {
+  //     this.getUserProducts()
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // } 
 
-      // Calling getUserProducts() to retrieve all products that user added to cart
-      this.getUserProducts()
-    } catch (error) {
-      console.log(error)
-    }
-  } 
-
-  // Make Axios call to retrieve all user products from back-end
-  async getUserProducts(id) {
-    try {
-      const responseTwo = await Axios (`${apiUrl}/users/${id}`)
-      this.setState({ userProducts: responseTwo.data.user.products })
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  // // Make Axios call to retrieve all user products from back-end
+  // async getUserProducts(id) {
+  //   try {
+  //     const response = await Axios (`${apiUrl}/users/${id}`)
+  //     this.setState({ userProducts: response.data.user.products })
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // }
   
   // Create routes for home, shop, login, register, and cart
   render() {
@@ -56,7 +51,8 @@ class App extends Component {
               <Footer />
             </div>
           )}/>
-          <Route exact path='/shop' component={Shop} />
+          <Route exact path='/shop' render={() => 
+            <Shop products={this.state.products} /> } />
           <Route exact path='/login' component={Login} />
           <Route exact path='/register' component={Register} />
           <Route exact path='/viewmycart' component={Cart} />
