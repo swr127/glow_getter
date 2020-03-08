@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Axios from 'axios'
 import apiUrl from '../../apiConfig'
-import ShopProductCard from './ShopProductCard'
+import Layout from '../shared/Layout'
 
 class Shop extends Component {
     constructor(props) {
@@ -23,23 +23,27 @@ class Shop extends Component {
           console.log(error)
         }
     } 
-
-    renderProducts = () => {
-        if (this.state.products) {
-        return this.state.products.map((index, product) => {
-            return <ShopProductCard 
-                index={index} 
-                product={product}/>
-        })
-    }
-    }
     
+    // Create add to cart button event handler
+    // Associating a product with a user (front-end and back-end)
+    // Lifting state to App and into Cart
+    // handleClick
+
     render() {
-        return (
-            <div className="Shop">
-                Shop
-                {this.renderProducts()}
+        const products = this.state.products.map(product => (
+            <div key={product.id}>
+                {product.name} <br/>
+                <img src={product.img} width='200px' height='200px' alt="product image" /> <br />
+                {product.price} <br />
+                <button>Add to Cart</button>
             </div>
+        ))
+        return (
+            <Layout>
+                <div className="Shop">
+                    {products}
+                </div>
+            </Layout>
         )
     }
 }

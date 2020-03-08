@@ -1,11 +1,10 @@
 import React, {Component} from 'react'
 
-// Change to class component for add to cart functionality (lifting state)
-// Associating a product with a user (front-end and back-end)
+// Come back and use this component for MVP
 function ShopProduct() {
     return (
         <div className="ShopProduct">
-            Shop Product Card
+            Product Page
         </div>
     )
 }

@@ -1,11 +1,14 @@
 import React, {Component} from 'react'
+import Layout from '../shared/Layout'
 
 // Change to class component for Register User Auth
 function Register() {
     return (
-        <div className="Register">
-            Sign Up
-        </div>
+        <Layout>
+            <div className="Register">
+                Sign Up
+            </div>
+        </Layout>
     )
 }
 
