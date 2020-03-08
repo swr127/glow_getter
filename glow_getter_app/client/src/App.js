@@ -15,19 +15,30 @@ class App extends Component {
     super(props)
 
     this.state = {
-      products: []
+      products: [],
+      userProducts: []
     }
   }
 
-  // Make Axios call to retrieve all products from back-end
   async componentDidMount() {
     try {
+      // Make Axios call to retrieve all products from back-end
       const response = await Axios (`${apiUrl}/products`)
       this.setState({ products: response.data.products })
+
+    
     } catch (error) {
       console.log(error)
     }
   } 
+
+  // Make Axios call to retrieve all user products from back-end
+  async getUserProducts(id) {
+    const responseTwo = await Axios (`${apiUrl}/users/${id}`)
+    this.setState({ userProducts: responseTwo.data.products })
+
+  }
+  
 
   // Create routes for home, shop, login, register, and cart
   render() {
