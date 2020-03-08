@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Axios from 'axios'
+import apiUrl from './apiConfig'
 import Header from './components/routes/Header'
 import Home from './components/routes/Home'
 import Footer from './components/routes/Footer'
