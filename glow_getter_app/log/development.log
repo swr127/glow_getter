@@ -2524,3 +2524,52 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1860)
 
 
+Started GET "/products" for ::1 at 2020-03-08 17:43:04 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (13.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 3.6ms | ActiveRecord: 13.3ms | Allocations: 1860)
+
+
+Started GET "/products" for ::1 at 2020-03-08 17:43:29 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (124.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 129ms (Views: 4.4ms | ActiveRecord: 124.3ms | Allocations: 1860)
+
+
+Started GET "/products" for ::1 at 2020-03-08 17:43:31 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (15.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 3.1ms | ActiveRecord: 15.3ms | Allocations: 1860)
+
+
+Started GET "/products" for ::1 at 2020-03-08 17:43:33 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (16.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 4.5ms | ActiveRecord: 16.4ms | Allocations: 1860)
+
+
+Started GET "/products" for ::1 at 2020-03-08 17:43:36 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1860)
+
+
+Started GET "/products" for ::1 at 2020-03-08 17:43:37 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (83.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 88ms (Views: 4.2ms | ActiveRecord: 83.5ms | Allocations: 1860)
+
+
+Started GET "/products" for ::1 at 2020-03-08 17:45:03 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1860)
+
+

@@ -55,7 +55,7 @@ class App extends Component {
             <Shop products={this.state.products} /> } />
           <Route exact path='/login' component={Login} />
           <Route exact path='/register' component={Register} />
-          <Route exact path='/viewmycart' component={Cart} />
+          <Route exact path='/cart' component={Cart} />
           </Switch>
       </div>
     )

@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
+import Header from '../routes/Header'
+import Footer from '../routes/Footer'
 
 const Layout = (props) =>
 {
