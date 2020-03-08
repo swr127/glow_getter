@@ -51,12 +51,11 @@ class App extends Component {
               <Footer />
             </div>
           )}/>
-          <Route exact path='/shop' render={() => 
-            <Shop products={this.state.products} /> } />
+          <Route exact path='/shop' component={Shop} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/register' component={Register} />
           <Route exact path='/cart' component={Cart} />
-          </Switch>
+        </Switch>
       </div>
     )
   }
