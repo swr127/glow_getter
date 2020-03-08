@@ -26,7 +26,8 @@ class App extends Component {
       const response = await Axios (`${apiUrl}/products`)
       this.setState({ products: response.data.products })
 
-    
+      // Calling getUserProducts() to retrieve all products that user added to cart
+      this.getUserProducts()
     } catch (error) {
       console.log(error)
     }
@@ -34,12 +35,14 @@ class App extends Component {
 
   // Make Axios call to retrieve all user products from back-end
   async getUserProducts(id) {
-    const responseTwo = await Axios (`${apiUrl}/users/${id}`)
-    this.setState({ userProducts: responseTwo.data.products })
-
+    try {
+      const responseTwo = await Axios (`${apiUrl}/users/${id}`)
+      this.setState({ userProducts: responseTwo.data.user.products })
+    } catch (error) {
+      console.log(error)
+    }
   }
   
-
   // Create routes for home, shop, login, register, and cart
   render() {
     return (
@@ -60,7 +63,6 @@ class App extends Component {
       </div>
     )
   }
-
 }
 
 export default App
