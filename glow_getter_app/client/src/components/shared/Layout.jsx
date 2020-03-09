@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../routes/Header'
 import Footer from '../routes/Footer'
 
-const Layout = (props) => {
+function Layout(props) {
     return (
         <div className="Layout">
             <Header
