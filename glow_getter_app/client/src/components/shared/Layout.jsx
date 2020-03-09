@@ -2,14 +2,17 @@ import React from 'react'
 import Header from '../routes/Header'
 import Footer from '../routes/Footer'
 
-const Layout = (props) =>
-{
+const Layout = (props) => {
     return (
-        <React.Fragment>
-            <Header />
+        <div className="Layout">
+            <Header
+                currentUser={props.currentUser}
+                logout={props.handleLogout} />
+
                 {props.children}
+
             <Footer />
-        </React.Fragment>
+        </div>
     )
 }
 

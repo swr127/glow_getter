@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import apiUrl from '../../apiConfig'
-import Layout from '../shared/Layout'
 
 class Shop extends Component {
     constructor(props) {
@@ -39,11 +38,9 @@ class Shop extends Component {
             </div>
         ))
         return (
-            <Layout>
-                <div className="Shop">
-                    {products}
-                </div>
-            </Layout>
+          <div className="Shop">
+              {products}
+          </div>
         )
     }
 }

@@ -3,14 +3,12 @@ import { Route, Switch, withRouter } from 'react-router-dom'
 import axios from 'axios'
 import apiUrl from './apiConfig'
 import { loginUser, registerUser, verifyUser } from './userAuth'
-import Header from './components/routes/Header'
-import Home from './components/routes/Home'
-import Footer from './components/routes/Footer'
+import Layout from './components/shared/Layout'
 import Shop from './components/routes/Shop'
 import Login from './components/routes/Login'
-import WelcomeBack from './components/routes/WelcomeBack'
+import LoginConfirm from './components/routes/LoginConfirm'
 import Register from './components/routes/Register'
-import Welcome from './components/routes/Welcome'
+import RegisterConfirm from './components/routes/RegisterConfirm'
 import Cart from './components/routes/Cart'
 import './App.css';
 
@@ -62,7 +60,7 @@ class App extends Component {
     event.preventDefault()
     const currentUser = await loginUser(this.state.authFormData)
     this.setState({ currentUser })
-    this.props.history.push("/login/welcomeback")
+    this.props.history.push("/login/welcome")
   }
 
   handleRegister = async (event) => {
@@ -93,39 +91,35 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Switch>
-          <Route exact path='/' render={()=> (
-            <div>
-              <Header 
-                currentUser={this.state.currentUser}
-                logout={this.handleLogout}
-              />
-              <Home />
-              <Footer />
-            </div>
-          )}/>
-          <Route exact path='/shop' component={Shop} />
-          <Route exact path='/login' render={() => (
-            <Login 
-              handleLogin={this.handleLogin}
-              handleLoginButton={this.handleLoginButton}
-              handleChange={this.authHandleChange}
-              formData={this.state.authFormData} 
-            /> )} 
-          />
-          <Route exact path='/login/welcomeback' render={() => (
-            <WelcomeBack currentUser={this.state.currentUser} /> )}
-          /> 
-          <Route exact path='/register' render={() => (
-            <Register 
-              handleRegister={this.handleRegister}
-              handleChange={this.authHandleChange}
-              formData={this.state.authFormData}
-            /> )}
-          />
-          <Route exact path='/register/welcome' component={Welcome} />
-          <Route exact path='/cart' component={Cart} />
-        </Switch>
+        <Layout 
+          currentUser={this.state.currentUser}
+          logout={this.handleLogout}>
+          <Switch>
+            <Route exact path='/shop' component={Shop} />
+            <Route exact path='/login' render={() => (
+              <Login 
+                handleLogin={this.handleLogin}
+                handleLoginButton={this.handleLoginButton}
+                handleChange={this.authHandleChange}
+                formData={this.state.authFormData} 
+              /> )} 
+            />
+            <Route exact path='/login/welcomeback' render={() => (
+              <LoginConfirm 
+                currentUser={this.state.currentUser} 
+              /> )}
+            /> 
+            <Route exact path='/register' render={() => (
+              <Register 
+                handleRegister={this.handleRegister}
+                handleChange={this.authHandleChange}
+                formData={this.state.authFormData}
+              /> )}
+            />
+            <Route exact path='/register/welcome' component={RegisterConfirm} />
+            <Route exact path='/cart' component={Cart} />
+          </Switch>
+        </Layout>
       </div>
     )
   }
