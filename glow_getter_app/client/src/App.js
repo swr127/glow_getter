@@ -31,7 +31,7 @@ class App extends Component {
   async componentDidMount() {
     try {
       // Calling getUserProducts()
-      this.getUserProducts()
+      // this.getUserProducts()
         // How do I connect getUserProducts with currentUser?
 
       // Retreiving currentUser 
@@ -45,14 +45,14 @@ class App extends Component {
     }
   }
 
-  getUserProducts = async (id) => {
-    try {
-      const response = await axios (`${apiUrl}/users/${id}`)
-      this.setState({ userProducts: response.data.user.products })
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  // getUserProducts = async (id) => {
+  //   try {
+  //     const response = await axios (`${apiUrl}/users/${id}`)
+  //     this.setState({ userProducts: response.data.user.products })
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // }
 
   // -------------- START USER AUTH ------------------
   handleLoginButton = () => {
@@ -103,7 +103,7 @@ class App extends Component {
           <Route exact path='/login' render={() => (
             <Login 
               handleLogin={this.handleLogin}
-              handleChange={this.hanldeChange}
+              handleChange={this.handleChange}
               formData={this.state.authFormData} 
             /> )} 
           />
