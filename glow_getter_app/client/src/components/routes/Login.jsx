@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Layout from '../shared/Layout'
 
 function Login(props) {
@@ -17,15 +18,7 @@ function Login(props) {
                                 value={props.formData.username}
                                 onChange={props.handleChange}
                             />
-                        <div>Email: </div>
-                            <input 
-                                required
-                                placeholder="Enter your email address"
-                                name="email"
-                                type="text"
-                                value={props.formData.email}
-                                onChange={props.handleChange}
-                            />
+                      
                         <div>Password: </div>
                             <input
                                 required
@@ -35,7 +28,11 @@ function Login(props) {
                                 value={props.formData.password}
                                 onChange={props.handleChange}
                             /> <br />
-                        <button>Login</button>
+                        <Link to="/shop">
+                            <button type="button">
+                                Login
+                            </button>
+                        </Link>
                 </form>
             </div>
         </Layout>

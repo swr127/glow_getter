@@ -112,6 +112,7 @@ class App extends Component {
               formData={this.state.authFormData} 
             /> )} 
           />
+          <Route exact path='/welcomeback' component={WelcomeBack} />
           <Route exact path='/register' render={() => (
             <Register 
               handleRegister={this.handleRegister}
@@ -119,6 +120,7 @@ class App extends Component {
               formData={this.state.authFormData}
             /> )}
           />
+          <Route exact path='/welcome' component={Welcome} />
           <Route exact path='/cart' component={Cart} />
         </Switch>
       </div>
