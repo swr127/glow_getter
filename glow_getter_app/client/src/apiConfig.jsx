@@ -1,5 +1,3 @@
-// import axios from 'axios';
-
 let apiUrl 
 const apiUrls = {
     production: '',
@@ -33,30 +31,3 @@ export default apiUrl
 //     const response = await apiUrl.get(`/products/${id}`)
 //     return response.data
 // }
-
-// -------------- START USER AUTH ------------------
-export const loginUser = async (loginData) => {
-  const response = await apiUrl.post('/auth/login', loginData)
-  localStorage.setItem('authToken', response.data.token);
-  apiUrl.defaults.headers.common.authorization = `Bearer ${response.data.token}`
-  return response.data.user
-}
-
-export const registerUser = async (registerData) => {
-  const response = await apiUrl.post('/users', { user: registerData })
-  localStorage.setItem('authToken', response.data.token);
-  apiUrl.defaults.headers.common.authorization = `Bearer ${response.data.token}`
-  return response.data.user
-}
-
-export const verifyUser = async () => {
-  const token = localStorage.getItem('authToken');
-  if (token) {
-    apiUrl.defaults.headers.common.authorization = `Bearer ${token}`
-    const response = await apiUrl.get('/auth/verify');
-    return response.data
-  }
-  return false
-}
- // -------------- END USER AUTH ------------------
- 

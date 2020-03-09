@@ -7,9 +7,7 @@ function Register(props) {
             <div className="Login">
                 <h3>SIGN UP FOR AN ACCOUNT</h3>
                 {/* <p> placeholder for marketing text</p> */}
-                <form onSubmit={(event) => {
-                    event.preventDefault()
-                    props.handleRegister() }} >
+                <form onSubmit={props.handleRegister} >
                         <div>Username: </div>
                             <input 
                                 required
