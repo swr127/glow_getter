@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Layout from '../shared/Layout'
 
 function Login(props) {
@@ -28,11 +27,7 @@ function Login(props) {
                                 value={props.formData.password}
                                 onChange={props.handleChange}
                             /> <br />
-                        {/* <Link to="/login/welcomeback"> */}
-                            <button>
-                                Login
-                            </button>
-                        {/* </Link> */}
+                        <button>login</button>
                 </form>
             </div>
         </Layout>

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import Layout from '../shared/Layout'
 
 function Register(props) {
@@ -36,11 +35,7 @@ function Register(props) {
                                 value={props.formData.password}
                                 onChange={props.handleChange}
                             /> <br />
-                        {/* <Link to="/register/welcome"> */}
-                            <button>
-                                signup
-                            </button>
-                        {/* </Link> */}
+                        <button>signup</button>
                 </form>
             </div>
         </Layout>

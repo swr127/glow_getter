@@ -57,15 +57,12 @@ class App extends Component {
   // }
 
   // -------------- START USER AUTH ------------------
-  handleLoginButton = () => {
-    this.props.history.push("/welcome")
-  }
 
   handleLogin = async (event) => {
     event.preventDefault()
     const currentUser = await loginUser(this.state.authFormData)
     this.setState({ currentUser })
-    console.log(currentUser.username)
+    this.props.history.push("/login/welcomeback")
   }
 
   handleRegister = async (event) => {
@@ -116,7 +113,9 @@ class App extends Component {
               formData={this.state.authFormData} 
             /> )} 
           />
-          <Route exact path='/login/welcomeback' component={WelcomeBack} />
+          <Route exact path='/login/welcomeback' render={() => (
+            <WelcomeBack currentUser={this.state.currentUser} /> )}
+          /> 
           <Route exact path='/register' render={() => (
             <Register 
               handleRegister={this.handleRegister}
@@ -125,7 +124,6 @@ class App extends Component {
             /> )}
           />
           <Route exact path='/register/welcome' component={Welcome} />
-          />
           <Route exact path='/cart' component={Cart} />
         </Switch>
       </div>
