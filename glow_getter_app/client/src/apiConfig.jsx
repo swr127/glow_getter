@@ -1,13 +1,31 @@
-let apiUrl 
-const apiUrls = {
-    production: 'http://localhost:3000',
-    development: 'http://localhost:3000'
+import axios from 'axios';
+
+const apiUrl = 'http://localhost:3000'
+
+const api = axios.create({
+  apiUrl: apiUrl
+})
+
+export const loginUser = async (loginData) => {
+  const resp = await api.post('/auth/login', loginData)
+  localStorage.setItem('authToken', resp.data.token);
+  api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`
+  return resp.data.user
 }
 
-if (window.location.hostname === 'localhost') {
-    apiUrl = apiUrls.development
-} else {
-    apiUrl = apiUrls.production
+export const registerUser = async (registerData) => {
+  const resp = await api.post('/users', { user: registerData })
+  localStorage.setItem('authToken', resp.data.token);
+  api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`
+  return resp.data.user
 }
 
-export default apiUrl
+export const verifyUser = async () => {
+  const token = localStorage.getItem('authToken');
+  if (token) {
+    api.defaults.headers.common.authorization = `Bearer ${token}`
+    const resp = await api.get('/auth/verify');
+    return resp.data
+  }
+  return false
+}
