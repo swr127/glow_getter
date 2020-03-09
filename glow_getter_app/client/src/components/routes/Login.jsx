@@ -28,7 +28,7 @@ function Login(props) {
                                 value={props.formData.password}
                                 onChange={props.handleChange}
                             /> <br />
-                        <Link to="/shop">
+                        <Link to="/login/welcomeback">
                             <button type="button">
                                 Login
                             </button>

@@ -8,7 +8,9 @@ import Home from './components/routes/Home'
 import Footer from './components/routes/Footer'
 import Shop from './components/routes/Shop'
 import Login from './components/routes/Login'
+import WelcomeBack from './components/routes/WelcomeBack'
 import Register from './components/routes/Register'
+import Welcome from './components/routes/Welcome'
 import Cart from './components/routes/Cart'
 import './App.css';
 
@@ -56,7 +58,7 @@ class App extends Component {
 
   // -------------- START USER AUTH ------------------
   handleLoginButton = () => {
-    this.props.history.push("/login")
+    this.props.history.push("/welcome")
   }
 
   handleLogin = async (event) => {
@@ -108,11 +110,12 @@ class App extends Component {
           <Route exact path='/login' render={() => (
             <Login 
               handleLogin={this.handleLogin}
+              handleLoginButton={this.handleLoginButton}
               handleChange={this.authHandleChange}
               formData={this.state.authFormData} 
             /> )} 
           />
-          <Route exact path='/welcomeback' component={WelcomeBack} />
+          <Route exact path='/login/welcomeback' component={WelcomeBack} />
           <Route exact path='/register' render={() => (
             <Register 
               handleRegister={this.handleRegister}
@@ -120,7 +123,8 @@ class App extends Component {
               formData={this.state.authFormData}
             /> )}
           />
-          <Route exact path='/welcome' component={Welcome} />
+          <Route exact path='/register/welcome' component={Welcome} />
+          />
           <Route exact path='/cart' component={Cart} />
         </Switch>
       </div>
