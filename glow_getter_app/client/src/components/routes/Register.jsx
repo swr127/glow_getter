@@ -36,11 +36,11 @@ function Register(props) {
                                 value={props.formData.password}
                                 onChange={props.handleChange}
                             /> <br />
-                        <Link to="/register/welcome">
-                            <button type="button">
+                        {/* <Link to="/register/welcome"> */}
+                            <button>
                                 signup
                             </button>
-                        </Link>
+                        {/* </Link> */}
                 </form>
             </div>
         </Layout>

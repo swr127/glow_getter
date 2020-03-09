@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, withRouter } from 'react-router-dom'
 import axios from 'axios'
 import apiUrl from './apiConfig'
 import { loginUser, registerUser, verifyUser } from './userAuth'
@@ -72,6 +72,7 @@ class App extends Component {
     event.preventDefault()
     const currentUser = await registerUser(this.state.authFormData)
     this.setState({ currentUser })
+    this.props.history.push("/register/welcome")
   }
 
   handleLogout = () => {
@@ -132,4 +133,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default withRouter(App)

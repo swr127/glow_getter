@@ -28,11 +28,11 @@ function Login(props) {
                                 value={props.formData.password}
                                 onChange={props.handleChange}
                             /> <br />
-                        <Link to="/login/welcomeback">
-                            <button type="button">
+                        {/* <Link to="/login/welcomeback"> */}
+                            <button>
                                 Login
                             </button>
-                        </Link>
+                        {/* </Link> */}
                 </form>
             </div>
         </Layout>
