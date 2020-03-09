@@ -7,13 +7,11 @@ function Login(props) {
             <div className="Login">
                 <h3>LOGIN TO YOUR ACCOUNT</h3>
                 {/* <img src= find admin icon alt="user"/> */}
-                <form onSubmit={(event) => {
-                    event.preventDefault()
-                    props.handleLogin() }} >
+                <form onSubmit={props.handleLogin} >
                         <div>Username: </div>
                             <input 
                                 required
-                                placeholder="Enter username"
+                                placeholder="Enter your username"
                                 name="username"
                                 type="text"
                                 value={props.formData.username}
@@ -22,7 +20,7 @@ function Login(props) {
                         <div>Email: </div>
                             <input 
                                 required
-                                placeholder="Enter email address"
+                                placeholder="Enter your email address"
                                 name="email"
                                 type="text"
                                 value={props.formData.email}
@@ -31,7 +29,7 @@ function Login(props) {
                         <div>Password: </div>
                             <input
                                 required
-                                placeholder="Enter password (must be 6 characters)"
+                                placeholder="Enter your password (must be 6 characters)"
                                 name="password"
                                 type="password"
                                 value={props.formData.password}

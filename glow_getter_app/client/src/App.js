@@ -59,19 +59,20 @@ class App extends Component {
     this.props.history.push("/login")
   }
 
-  handleLogin = async () => {
-    const currentUser = await loginUser(this.state.authFormData);
-    this.setState({ currentUser });
+  handleLogin = async (event) => {
+    event.preventDefault()
+    const currentUser = await loginUser(this.state.authFormData)
+    this.setState({ currentUser })
   }
 
   handleRegister = async (event) => {
-    event.preventDefault();
-    const currentUser = await registerUser(this.state.authFormData);
-    this.setState({ currentUser });
+    event.preventDefault()
+    const currentUser = await registerUser(this.state.authFormData)
+    this.setState({ currentUser })
   }
 
   handleLogout = () => {
-    localStorage.removeItem("jwt");
+    localStorage.removeItem("jwt")
     this.setState({
       currentUser: null
     })
@@ -103,7 +104,7 @@ class App extends Component {
           <Route exact path='/login' render={() => (
             <Login 
               handleLogin={this.handleLogin}
-              handleChange={this.handleChange}
+              handleChange={this.authHandleChange}
               formData={this.state.authFormData} 
             /> )} 
           />

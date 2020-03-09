@@ -4,14 +4,14 @@ import Layout from '../shared/Layout'
 function Register(props) {
     return (
         <Layout>
-            <div className="Login">
+            <div className="Register">
                 <h3>SIGN UP FOR AN ACCOUNT</h3>
                 {/* <p> placeholder for marketing text</p> */}
                 <form onSubmit={props.handleRegister} >
                         <div>Username: </div>
                             <input 
                                 required
-                                placeholder="Enter username"
+                                placeholder="Create new username"
                                 name="username"
                                 type="text"
                                 value={props.formData.username}
@@ -20,7 +20,7 @@ function Register(props) {
                         <div>Email: </div>
                             <input 
                                 required
-                                placeholder="Enter email address"
+                                placeholder="Enter your email address"
                                 name="email"
                                 type="text"
                                 value={props.formData.email}
@@ -29,7 +29,7 @@ function Register(props) {
                         <div>Password: </div>
                             <input
                                 required
-                                placeholder="Enter password (must be 6 characters)"
+                                placeholder="Create password (must be 6 characters)"
                                 name="password"
                                 type="password"
                                 value={props.formData.password}
