@@ -4,6 +4,7 @@ import axios from 'axios'
 import apiUrl from './apiConfig'
 import { loginUser, registerUser, verifyUser } from './userAuth'
 import Layout from './components/shared/Layout'
+import Home from './components/routes/Home'
 import Shop from './components/routes/Shop'
 import Login from './components/routes/Login'
 import LoginConfirm from './components/routes/LoginConfirm'
@@ -95,6 +96,7 @@ class App extends Component {
           currentUser={this.state.currentUser}
           logout={this.handleLogout}>
           <Switch>
+            <Route exact path='/' component={Home} />
             <Route exact path='/shop' component={Shop} />
             <Route exact path='/login' render={() => (
               <Login 
@@ -104,7 +106,7 @@ class App extends Component {
                 formData={this.state.authFormData} 
               /> )} 
             />
-            <Route exact path='/login/welcomeback' render={() => (
+            <Route exact path='/login/welcome' render={() => (
               <LoginConfirm 
                 currentUser={this.state.currentUser} 
               /> )}
