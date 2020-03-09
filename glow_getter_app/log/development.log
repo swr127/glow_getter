@@ -2580,3 +2580,39 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.6ms | Allocations: 1948)
 
 
+Started GET "/products" for ::1 at 2020-03-09 10:45:34 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (23.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 124ms (Views: 38.7ms | ActiveRecord: 67.1ms | Allocations: 8469)
+
+
+Started GET "/products" for ::1 at 2020-03-09 10:45:36 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (2.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 2.5ms | Allocations: 1879)
+
+
+Started GET "/products" for ::1 at 2020-03-09 10:46:05 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 1.9ms | Allocations: 1879)
+
+
+Started GET "/products" for ::1 at 2020-03-09 10:46:29 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (2.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 2.5ms | Allocations: 1879)
+
+
+Started GET "/products" for ::1 at 2020-03-09 10:46:34 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (29.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 32ms (Views: 2.3ms | ActiveRecord: 29.9ms | Allocations: 1860)
+
+

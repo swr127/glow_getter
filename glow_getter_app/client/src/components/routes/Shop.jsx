@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Axios from 'axios'
+import axios from 'axios'
 import apiUrl from '../../apiConfig'
 import Layout from '../shared/Layout'
 
@@ -15,7 +15,7 @@ class Shop extends Component {
     // Make Axios call to retrieve all products from back-end
     async componentDidMount() {
         try {
-          const response = await Axios (`${apiUrl}/products`)
+          const response = await axios (`${apiUrl}/products`)
           this.setState({ products: response.data })
           console.log(response)
 

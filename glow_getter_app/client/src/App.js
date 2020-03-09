@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Axios from 'axios'
+import axios from 'axios'
 import apiUrl from './apiConfig'
 import Header from './components/routes/Header'
 import Home from './components/routes/Home'
@@ -32,7 +32,7 @@ class App extends Component {
   // // Make Axios call to retrieve all user products from back-end
   // async getUserProducts(id) {
   //   try {
-  //     const response = await Axios (`${apiUrl}/users/${id}`)
+  //     const response = await axios (`${apiUrl}/users/${id}`)
   //     this.setState({ userProducts: response.data.user.products })
   //   } catch (error) {
   //     console.log(error)
