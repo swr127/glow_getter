@@ -31,7 +31,7 @@ class Shop extends Component {
     render() {
         const products = this.state.products.map(product => (
             <div key={product.id}>
-                <img src={product.img} width='200px' height='200px' alt="product image" /> <br />
+                <img src={product.img} width='200px' height='200px' alt="product" /> <br />
                 {product.name} <br/>
                 {product.price} <br />
                 <button>Add to Cart</button>
