@@ -34,6 +34,7 @@ export default apiUrl
 //     return response.data
 // }
 
+// -------------- START USER AUTH ------------------
 export const loginUser = async (loginData) => {
   const response = await apiUrl.post('/auth/login', loginData)
   localStorage.setItem('authToken', response.data.token);
@@ -57,3 +58,5 @@ export const verifyUser = async () => {
   }
   return false
 }
+ // -------------- END USER AUTH ------------------
+ 

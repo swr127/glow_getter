@@ -2616,3 +2616,164 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 32ms (Views: 2.3ms | ActiveRecord: 29.9ms | Allocations: 1860)
 
 
+Started GET "/users/undefined" for ::1 at 2020-03-09 10:57:37 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 171)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 10:58:16 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 10:59:31 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 10:59:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 10:59:46 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 10:59:58 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:00:00 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:00:02 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:00:27 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:00:31 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:00:42 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:00:55 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:01:16 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:01:20 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:01:28 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:01:32 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:01:33 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:03:52 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 133)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:04:57 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:05:02 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:05:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:05:09 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
+Started GET "/users/undefined" for ::1 at 2020-03-09 11:06:27 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"undefined"}
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+

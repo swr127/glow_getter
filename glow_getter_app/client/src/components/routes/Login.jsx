@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import Layout from '../shared/Layout'
 
 // Change to class component for Login User Auth
