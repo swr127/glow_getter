@@ -1,16 +1,48 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
+import HamburgerMenu from 'react-hamburger-menu'
 
-function Layout(props) {
+class Layout extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            open: false
+        }
+    }
+
+    handleClick() {
+        this.setState({
+          open: !this.state.open
+        })
+    }
+
+    displayHamburgerMenu = () => {
+        return (
+          <HamburgerMenu
+            isOpen={this.state.open}
+            menuClicked={this.handleClick.bind(this)}
+            width={18}
+            height={15}
+            strokeWidth={2}
+            rotate={0}
+            color='white'
+            borderRadius={0}
+            animationDuration={0.5}
+          />
+        )
+      }
+
+    render() {
     return (
         <div className="Layout">
             <div className="Header">
                 <h1>GLOW GETTER</h1>
                 <div>
-                    {props.currentUser ? 
+                    {this.props.currentUser ? 
                     <div>
-                        {props.currentUser.username}
-                        <button onClick={props.logout}>Logout</button> 
+                        {this.props.currentUser.username}
+                        <button onClick={this.props.logout}>Logout</button> 
 
                         <br />
 
@@ -28,13 +60,13 @@ function Layout(props) {
                 </div>
             </div>
 
-            {props.children}
+            {this.props.children}
 
             <div className="Footer">
                 <p>&copy; SAMANTHA RUSSELL</p>
             </div>
         </div>
-    )
+    )}
 }
 
 export default Layout
