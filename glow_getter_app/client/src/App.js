@@ -63,6 +63,7 @@ class App extends Component {
     event.preventDefault()
     const currentUser = await loginUser(this.state.authFormData)
     this.setState({ currentUser })
+    console.log(currentUser.username)
   }
 
   handleRegister = async (event) => {
@@ -95,7 +96,10 @@ class App extends Component {
         <Switch>
           <Route exact path='/' render={()=> (
             <div>
-              <Header />
+              <Header 
+                currentUser={this.state.currentUser}
+                logout={this.handleLogout}
+              />
               <Home />
               <Footer />
             </div>
