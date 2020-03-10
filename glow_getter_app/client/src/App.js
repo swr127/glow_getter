@@ -50,6 +50,10 @@ class App extends Component {
     console.log(response)
   }
 
+  redirectAddCart = async (event) => {
+    this.props.history.push("/login")
+  }
+
   // -------------- END SHOPPING CART ------------------
 
   // -------------- START USER AUTH ------------------
@@ -98,7 +102,8 @@ class App extends Component {
             <Route exact path='/shop' render={() => (
               <Shop 
                 currentUser={this.state.currentUser}
-                handleChange={this.handleAddCart} 
+                addCart={this.handleAddCart} 
+                redirect={this.redirectAddCart}
               /> )}
             />
             <Route exact path='/login' render={() => (

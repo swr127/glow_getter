@@ -1,10 +1,20 @@
 import axios from 'axios';
 
 const baseUrl = 'http://localhost:3000'
+let api;
 
-const api = axios.create({
-  baseURL: baseUrl
-})
+if (localStorage.getItem('authToken')){
+  api = axios.create({
+    baseURL: baseUrl,
+    headers: {
+      authorization: localStorage.getItem('authToken')
+    }
+  })
+} else {
+  api = axios.create({
+    baseURL: baseUrl
+  })
+}
 
 export const loginUser = async (loginData) => {
     const response = await api.post('/auth/login', loginData)
