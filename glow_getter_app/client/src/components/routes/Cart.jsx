@@ -9,6 +9,7 @@ class Cart extends Component {
         super(props)
 
         this.state = {
+            userProducts: [], 
         }
     }
 

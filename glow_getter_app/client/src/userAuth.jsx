@@ -45,3 +45,12 @@ export const userProducts = async (id) => {
   console.log(response)
   return response.data.products
 }
+
+export const addProductToCart = async (id) => {
+  const res = await api.post(`/cart/${id}`)
+  console.log(res)
+  return res.data 
+}
+
+// getcart
+  //get('/cart')

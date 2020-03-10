@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch, withRouter } from 'react-router-dom'
-import { loginUser, registerUser, verifyUser, userProducts } from './userAuth'
+import { loginUser, registerUser, verifyUser, addProductToCart } from './userAuth'
 import Layout from './components/shared/Layout'
 import Home from './components/routes/Home'
 import Shop from './components/routes/Shop'
@@ -43,8 +43,9 @@ class App extends Component {
 
   handleAddCart = async (event) => {
     event.preventDefault()
-    const userId = this.state.currentUser.id
-    const response = await userProducts(userId)
+    let product = event.target.name
+    // const userId = this.state.currentUser.id
+    const response = await addProductToCart(product)
     
     this.setState({ userProducts: response })
     console.log(response)
@@ -60,6 +61,7 @@ class App extends Component {
 
   handleLogin = async (event) => {
     event.preventDefault()
+
     const currentUser = await loginUser(this.state.authFormData)
     this.setState({ currentUser })
     this.props.history.push("/login/welcome")
