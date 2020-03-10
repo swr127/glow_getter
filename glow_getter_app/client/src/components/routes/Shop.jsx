@@ -11,7 +11,6 @@ class Shop extends Component {
       }
     }
 
-    // Make Axios call to retrieve all products from back-end
     async componentDidMount() {
         try {
           const response = await axios (`${apiUrl}/products`)
@@ -22,11 +21,6 @@ class Shop extends Component {
           console.log(error)
         }
     } 
-    
-    // Create add to cart button event handler
-    // Associating a product with a user (front-end and back-end)
-    // Lifting state to App and into Cart
-    // handleClick
 
     render() {
         const products = this.state.products.map(product => (
@@ -34,7 +28,7 @@ class Shop extends Component {
                 <img src={product.img} width='200px' height='200px' alt="product" /> <br />
                 {product.name} <br/>
                 {product.price} <br />
-                <button>Add to Cart</button>
+                <button onClick={this.props.handleChange}>Add to Cart</button>
             </div>
         ))
         return (

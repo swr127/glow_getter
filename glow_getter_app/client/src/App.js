@@ -31,11 +31,6 @@ class App extends Component {
 
   async componentDidMount() {
     try {
-      // Calling getUserProducts()
-      // this.getUserProducts()
-        // How do I connect getUserProducts with currentUser?
-
-      // Retreiving currentUser 
       const currentUser = await verifyUser()
       if (currentUser) {
         this.setState({ currentUser })
@@ -46,14 +41,26 @@ class App extends Component {
     }
   }
 
-  // getUserProducts = async (id) => {
-  //   try {
-  //     const response = await axios (`${apiUrl}/users/${id}`)
-  //     this.setState({ userProducts: response.data.user.products })
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  // }
+  // -------------- START SHOPPING CART ------------------
+
+  getUserProducts = async (id) => {
+    try {
+      const response = await axios (`${apiUrl}/users/${id}`)
+      this.setState({ userProducts: response.data.user.products })
+      console.log(response)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  handleAddCart = (event) => {
+    event.preventDefault()
+    let userId = this.state.currentUser.id
+    this.state.userProducts.push()
+    this.getUserProducts(userId)
+  }
+
+  // -------------- END SHOPPING CART ------------------
 
   // -------------- START USER AUTH ------------------
 
@@ -98,7 +105,12 @@ class App extends Component {
           logout={this.handleLogout}>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='/shop' component={Shop} />
+            <Route exact path='/shop' render={() => (
+              <Shop 
+                currentUser={this.state.currentUser}
+                handleChange={this.handleAddCart} 
+              /> )}
+            />
             <Route exact path='/login' render={() => (
               <Login 
                 handleLogin={this.handleLogin}
