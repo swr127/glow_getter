@@ -90,8 +90,9 @@ class App extends Component {
     const product = event.target.name
     const response = await removeProductFromCart(product)
     console.log(response)
+    window.location.reload()
   }
-  
+
   // -------------- END SHOPPING CART ------------------
 
   render() {

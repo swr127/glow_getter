@@ -50,7 +50,7 @@ class UsersController < ApplicationController
     puts params
     @product = Product.find(params[:product_id])
     if @current_user.products.push(@product)
-      render json: @current_user.products
+      render json: {message: 'Product added'}
     else
       render json: {message: @current_user.errors}
     end
