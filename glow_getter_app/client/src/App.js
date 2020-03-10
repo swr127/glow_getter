@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch, withRouter } from 'react-router-dom'
-import { loginUser, registerUser, verifyUser, addProductToCart } from './userAuth'
+import { loginUser, registerUser, verifyUser, addProductToCart, removeProductFromCart } from './userAuth'
 import Layout from './components/shared/Layout'
 import Home from './components/routes/Home'
 import Shop from './components/routes/Shop'
@@ -37,26 +37,10 @@ class App extends Component {
     }
   }
 
-  // -------------- START SHOPPING CART ------------------
-
-  handleAddCart = async (event) => {
-    event.preventDefault()
-    const product = event.target.name
-    const response = await addProductToCart(product)
-    console.log(response)
-  }
-
-  redirectAddCart = async () => {
-    this.props.history.push("/login")
-  }
-
-  // -------------- END SHOPPING CART ------------------
-
   // -------------- START USER AUTH ------------------
 
   handleLogin = async (event) => {
     event.preventDefault()
-
     const currentUser = await loginUser(this.state.authFormData)
     this.setState({ currentUser })
     this.props.history.push("/login/welcome")
@@ -88,6 +72,28 @@ class App extends Component {
   }
   // -------------- END USER AUTH ------------------
 
+  // -------------- START SHOPPING CART ------------------
+
+  handleAddCart = async (event) => {
+    event.preventDefault()
+    const product = event.target.name
+    const response = await addProductToCart(product)
+    console.log(response)
+  }
+  
+  handleRedirect = async () => {
+    this.props.history.push("/login")
+  }
+  
+  handleRemoveCart = async (event) => {
+    event.preventDefault()
+    const product = event.target.name
+    const response = await removeProductFromCart(product)
+    console.log(response)
+  }
+  
+  // -------------- END SHOPPING CART ------------------
+
   render() {
     return (
       <div className="App">
@@ -99,8 +105,8 @@ class App extends Component {
             <Route exact path='/shop' render={() => (
               <Shop 
                 currentUser={this.state.currentUser}
-                addCart={this.handleAddCart} 
-                redirect={this.redirectAddCart}
+                handleCart={this.handleAddCart} 
+                handleRedirect={this.handleRedirect}
               /> )}
             />
             <Route exact path='/login' render={() => (
@@ -124,7 +130,12 @@ class App extends Component {
               /> )}
             />
             <Route exact path='/register/welcome' component={RegisterConfirm} />
-            <Route exact path='/cart' component={Cart} />
+            <Route exact path='/cart' render={() => (
+              <Cart 
+                currentUser={this.state.currentUser}
+                handleCart={this.handleRemoveCart}
+              /> )}
+            />
           </Switch>
         </Layout>
       </div>

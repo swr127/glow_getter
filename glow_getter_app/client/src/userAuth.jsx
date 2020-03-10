@@ -52,7 +52,11 @@ export const addProductToCart = async (id) => {
   return response.data 
 }
 
-// removeProductFromCart
+export const removeProductFromCart = async (id) => {
+  const response = await api.delete(`/cart/${id}`)
+  console.log(response)
+  return(response.data)
+}
 
 // can I add the viewProducts in here and remove apiConfig?
 
