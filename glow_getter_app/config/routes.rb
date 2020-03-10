@@ -2,9 +2,10 @@ Rails.application.routes.draw do
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
 
-  post '/cart' => 'users#cartadd'
+  post '/cart/:user_id/:product_id' => 'users#cartadd'
+  delete '/cart/:user_id/:product_id' => 'users#cartremove'
   
   resources :users
   resources :products
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  
 end

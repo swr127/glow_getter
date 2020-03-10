@@ -27,7 +27,7 @@ class Shop extends Component {
             <div key={product.id}>
                 <img src={product.img} width='200px' height='200px' alt="product" /> <br />
                 {product.name} <br/>
-                {product.price} <br />
+                ${product.price} <br />
                 <button onClick={this.props.handleChange}>Add to Cart</button>
             </div>
         ))

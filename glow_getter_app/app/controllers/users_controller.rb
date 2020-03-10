@@ -39,11 +39,19 @@ class UsersController < ApplicationController
     @user.destroy
   end
 
-  # def cartadd 
-  #   @user = User.find(params[:id])
-  #   @product = Product.find(params[:id])
-  #   @user.products.push(products)
-  # end
+  # POST /users/1/products
+  def cartadd 
+    @user = User.find(params[:id])
+    @product = Product.find(params[:id])
+    @user.products.push(products)
+  end
+
+  # DELETE /users/1/products
+  def cartremove 
+    @user = User.find(params[:id])
+    @product = Product.find(params[:id])
+    @user.products.delete(@product)
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
