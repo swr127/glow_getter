@@ -32,7 +32,10 @@ class Cart extends Component {
         ))
         return (
           <div className="Shop">
-              {products}
+            { products.length > 0 ?
+              <div> {products} </div> :
+              <div>You're cart is empty!</div>
+            }
           </div>
         )
     }
