@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Route, Switch, withRouter } from 'react-router-dom'
 import axios from 'axios'
 import apiUrl from './apiConfig'
-import { loginUser, registerUser, verifyUser } from './userAuth'
+import { loginUser, registerUser, verifyUser, userProducts } from './userAuth'
 import Layout from './components/shared/Layout'
 import Home from './components/routes/Home'
 import Shop from './components/routes/Shop'
@@ -43,21 +43,32 @@ class App extends Component {
 
   // -------------- START SHOPPING CART ------------------
 
-  getUserProducts = async (id) => {
-    try {
-      const response = await axios (`${apiUrl}/users/${id}`)
-      this.setState({ userProducts: response.data.user.products })
-      console.log(response)
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  // getUserProducts = async (id) => {
+  //   try {
+  //     // const response = await axios (`${apiUrl}/users/${id}`)
+  //     this.state.userProducts.push()
 
-  handleAddCart = (event) => {
+  //     this.setState({ userProducts: response.data.user.products })
+  //     console.log(response)
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // }
+
+  handleAddCart = async (event) => {
     event.preventDefault()
     let userId = this.state.currentUser.id
-    this.state.userProducts.push()
-    this.getUserProducts(userId)
+    const response = await userProducts(userId)
+
+    // try {
+    //   // const response = await axios (`${apiUrl}/users/${id}`)
+    //   // this.state.userProducts.push()
+
+      this.setState({ userProducts: response })
+      console.log(response)
+    // } catch (error) {
+    //   console.log(error)
+    // }
   }
 
   // -------------- END SHOPPING CART ------------------

@@ -29,3 +29,9 @@ export const verifyUser = async () => {
     }
     return false
 }
+
+export const userProducts = async (id) => {
+  const response = await api.get(`/users/${id}`)
+  console.log(response)
+  return response.data.products
+}

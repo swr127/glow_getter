@@ -39,6 +39,12 @@ class UsersController < ApplicationController
     @user.destroy
   end
 
+  # def cartadd 
+  #   @user = User.find(params[:id])
+  #   @product = Product.find(params[:id])
+  #   @user.products.push(products)
+  # end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user

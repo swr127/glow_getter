@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
+
+  post '/cart' => 'users#cartadd'
   
   resources :users
   resources :products
