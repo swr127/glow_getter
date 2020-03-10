@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { viewCart } from '../../userAuth'
+import { viewCart } from '../../apiConfig'
 
 class Cart extends Component {
     constructor(props) {

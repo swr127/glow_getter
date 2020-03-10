@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch, withRouter } from 'react-router-dom'
-import { loginUser, registerUser, verifyUser, addProductToCart, removeProductFromCart } from './userAuth'
+import { loginUser, registerUser, verifyUser, addProductToCart, removeProductFromCart } from './apiConfig'
 import Layout from './components/shared/Layout'
 import Home from './components/routes/Home'
 import Shop from './components/routes/Shop'

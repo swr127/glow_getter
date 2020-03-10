@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import axios from 'axios'
-import apiUrl from '../../apiConfig'
+import { viewProducts } from '../../apiConfig'
 
 class Shop extends Component {
     constructor(props) {
@@ -13,8 +12,8 @@ class Shop extends Component {
 
     async componentDidMount() {
         try {
-          const response = await axios (`${apiUrl}/products`)
-          this.setState({ products: response.data })
+          const response = await viewProducts()
+          this.setState({ products: response })
           console.log(response)
 
         } catch (error) {

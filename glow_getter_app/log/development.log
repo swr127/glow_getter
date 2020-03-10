@@ -12598,3 +12598,151 @@ Completed 200 OK in 22ms (Views: 3.7ms | ActiveRecord: 16.2ms | Allocations: 245
 Completed 200 OK in 24ms (Views: 0.4ms | ActiveRecord: 19.5ms | Allocations: 2892)
 
 
+Started GET "/auth/verify" for ::1 at 2020-03-10 15:24:45 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 935)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-10 15:27:59 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 4.4ms | Allocations: 847)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-10 15:28:06 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 847)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-10 15:28:28 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 847)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-10 15:28:34 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 847)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-10 15:32:33 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 847)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-10 15:32:35 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 847)
+
+
+Started GET "/products" for ::1 at 2020-03-10 15:32:53 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1892)
+
+
+Started POST "/cart/4" for ::1 at 2020-03-10 15:32:58 -0400
+Processing by UsersController#cartadd as HTML
+  Parameters: {"product_id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:51:in `cartadd'
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:52:in `cartadd'
+  [1m[36mCart Create (0.7ms)[0m  [1m[32mINSERT INTO "carts" ("user_id", "product_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 18], ["product_id", 4], ["created_at", "2020-03-10 19:32:58.591116"], ["updated_at", "2020-03-10 19:32:58.591116"]]
+  ↳ app/controllers/users_controller.rb:52:in `cartadd'
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:52:in `cartadd'
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 4.2ms | Allocations: 4202)
+
+
+Started GET "/cart" for ::1 at 2020-03-10 15:33:00 -0400
+Processing by UsersController#cart as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" INNER JOIN "carts" ON "products"."id" = "carts"."product_id" WHERE "carts"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/users_controller.rb:45:in `cart'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.8ms | Allocations: 2150)
+
+
+Started GET "/products" for ::1 at 2020-03-10 15:33:04 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1860)
+
+
+Started GET "/products" for ::1 at 2020-03-10 15:33:08 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1860)
+
+
+Started GET "/cart" for ::1 at 2020-03-10 15:33:10 -0400
+Processing by UsersController#cart as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" INNER JOIN "carts" ON "products"."id" = "carts"."product_id" WHERE "carts"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/users_controller.rb:45:in `cart'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 2147)
+
+
+Started GET "/products" for ::1 at 2020-03-10 15:33:12 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1860)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-10 15:33:24 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 847)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-10 15:34:25 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (59.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 61ms (Views: 0.5ms | ActiveRecord: 59.1ms | Allocations: 847)
+
+
+Started GET "/products" for ::1 at 2020-03-10 15:34:31 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1860)
+
+
+Started GET "/cart" for ::1 at 2020-03-10 15:34:32 -0400
+Processing by UsersController#cart as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" INNER JOIN "carts" ON "products"."id" = "carts"."product_id" WHERE "carts"."user_id" = $1[0m  [["user_id", 18]]
+  ↳ app/controllers/users_controller.rb:45:in `cart'
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.6ms | Allocations: 2147)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-10 15:34:38 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (61.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 65ms (Views: 1.0ms | ActiveRecord: 61.3ms | Allocations: 847)
+
+
