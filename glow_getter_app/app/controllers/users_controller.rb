@@ -39,12 +39,13 @@ class UsersController < ApplicationController
     @user.destroy
   end
 
+  # GET /cart
   def cart
     @products = @current_user.products
     render json: @products
   end 
 
-  # POST /users/1/products
+  # POST /cart/product_id
   def cartadd 
     puts params
     @product = Product.find(params[:product_id])
@@ -55,7 +56,7 @@ class UsersController < ApplicationController
     end
   end
 
-  # DELETE /users/1/products
+  # DELETE /cart/product_id
   def cartremove 
     @product = Product.find(params[:product_id])
     if @current_user.products.delete(@product)

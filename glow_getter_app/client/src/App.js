@@ -16,8 +16,6 @@ class App extends Component {
     super(props)
 
     this.state = {
-      userProducts: [], 
-
       currentUser: null,
       authFormData: {
         username: "",
@@ -43,15 +41,12 @@ class App extends Component {
 
   handleAddCart = async (event) => {
     event.preventDefault()
-    let product = event.target.name
-    // const userId = this.state.currentUser.id
+    const product = event.target.name
     const response = await addProductToCart(product)
-    
-    this.setState({ userProducts: response })
     console.log(response)
   }
 
-  redirectAddCart = async (event) => {
+  redirectAddCart = async () => {
     this.props.history.push("/login")
   }
 
