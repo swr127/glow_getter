@@ -79,7 +79,8 @@ class Layout extends Component {
             {this.props.children}
 
             <div className="Footer">
-                <p>&copy; SAMANTHA RUSSELL</p>
+                <hr />
+                <p>&copy; 2020 SAMANTHA RUSSELL  |  GITHUB   LINKEDIN</p>
             </div>
         </div>
     )}
