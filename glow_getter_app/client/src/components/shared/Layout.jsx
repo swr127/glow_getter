@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import HamburgerMenu from 'react-hamburger-menu'
 
 class Layout extends Component {
     constructor(props) {
@@ -11,52 +10,65 @@ class Layout extends Component {
         }
     }
 
-    handleClick() {
-        this.setState({
-          open: !this.state.open
+    nav = React.createRef()
+
+    handleClick = () => {
+        this.setState(state => {
+            return {
+                open: !state.open,
+            }
         })
     }
 
-    displayHamburgerMenu = () => {
-        return (
-          <HamburgerMenu
-            isOpen={this.state.open}
-            menuClicked={this.handleClick.bind(this)}
-            width={18}
-            height={15}
-            strokeWidth={2}
-            rotate={0}
-            color='white'
-            borderRadius={0}
-            animationDuration={0.5}
-          />
-        )
-      }
+    handleClickOutside = (event) => {
+        if (this.nav.current && !this.nav.current.contains(event.target)) {
+          this.setState({
+            open: false,
+          });
+        }
+    }
+
+    componentDidMount() {
+        document.addEventListener("mousedown", this.handleClickOutside)
+    }
+    
+    componentWillUnmount() {
+      document.removeEventListener("mousedown", this.handleClickOutside)
+    }
 
     render() {
     return (
         <div className="Layout">
             <div className="Header">
-                <nav className="Nav">
+                <nav className="Nav" ref={this.nav}>
                     <NavLink className="Logo" to="/" style={{ textDecoration: 'none' }}>GG</NavLink>
-                    {this.props.currentUser ? 
-                    <div>
-                        {this.props.currentUser.username}
-                        <button onClick={this.props.logout}>Logout</button> 
+                    <button className="Button" type="button" onClick={this.handleClick}>☰</button>
 
-                        <br />
-
-                        <NavLink to="/">Home</NavLink>
-                        <NavLink to="/shop">Shop</NavLink>
-                        <NavLink to="/cart">View My Cart</NavLink>
-                    </div> :
-
-                    <div>
-                        <NavLink to="/">Home</NavLink>
-                        <NavLink to="/shop">Shop</NavLink>
-                        <NavLink to="/login">Login</NavLink>
-                        <NavLink to="/register">Register</NavLink>
-                    </div> }             
+                    {this.props.currentUser ?
+                        <div className="Logged-In">
+                            {this.props.currentUser.username}
+                            <button onClick={this.props.logout}>Logout</button> 
+                        
+                            {this.state.open && (
+                            <ul>
+                                <a href="/"><li>Home</li></a>
+                                <a href="/shop"><li>Shop</li></a>
+                                <a href="/cart"><li>View My Cart</li></a>
+                            </ul>
+                             )}
+                        </div>
+                    :
+                        <div className="Logged-Out">
+                            {this.state.open && (
+                            <ul>
+                                <a href="/"><li>Home</li></a>
+                                <a href="/shop"><li>Shop</li></a>
+                                <a href="/login"><li>Login</li></a>
+                                <a href="/login"><li>Register</li></a>
+                            </ul>
+                             )}
+                        </div>
+                    }
                 </nav>
             <Link className="Title" to="/" style={{ textDecoration: 'none' }}>GLOW GETTER</Link>
             </div>
