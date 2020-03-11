@@ -59,6 +59,7 @@ class App extends Component {
       currentUser: null
     })
     this.props.history.push("/")
+    window.localStorage.removeItem("authToken")
   }
 
   authHandleChange = (event) => {
