@@ -1,5 +1,5 @@
 /* **************
-// ALL DEVICE STYLING
+// GLOBAL
 /* **************/
 
 .App {
@@ -15,7 +15,7 @@
 }
 
 /* **************
-// DESKTOP
+// LAYOUT
 /* **************/
 
 .Header {
@@ -29,6 +29,21 @@
   width: 100%;
 }
 
+.Title {
+  padding-top: 10px;
+}
+
+.Title-Text {
+  color: black;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.Title-Text:hover {
+  color: darkgray;
+}
+
 .Logo {
   color: black;
   font-size: 20px;
@@ -38,13 +53,52 @@
   width: 28px;
 }
 
-.Title {
-  color: black;
-  font-size: 40px;
-  font-weight: 400;
-  letter-spacing: 4px;
+.Logo:hover {
+  color: darkgray;
+  font-weight: 600;
+}
+
+.Hamburger-Button {
+  float: right;
 }
 
 /* **************
-// MOBILE
+// HOME
+/* **************/
+
+.Home {
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.Slide div {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  height: 800px;
+}
+
+/* **************
+// LOGIN
+/* **************/
+
+/* **************
+// LOGIN CONFIRM
+/* **************/
+
+/* **************
+// REGISTER
+/* **************/
+
+/* **************
+// REGISTER CONFIRM
+/* **************/
+
+/* **************
+// SHOP
+/* **************/
+
+/* **************
+// CART
 /* **************/
