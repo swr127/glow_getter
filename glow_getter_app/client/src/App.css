@@ -123,26 +123,29 @@
 }
 
 .Product-Image {
-  background-color: transparent;
-  perspective: 1000px;
+  transition-duration: 1s;
+  transform-style:preserve-3d;
 }
 
-.Product-Flip {
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.Product-Image:hover .Product-Flip {
-  transform: rotateY(180deg);
+.Product-Image:hover {
+  transform:rotateY(180deg);
+  transition-duration: 1s;
 }
 
 .Product-Front, .Product-Back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Product-Front {
+  width: 100%;
+  position: absolute;
 }
 
 .Product-Back {
-  transform: rotateY(180deg);
+  opacity: 1;
 }
 
 .Product-Name {

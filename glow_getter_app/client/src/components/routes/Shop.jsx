@@ -25,10 +25,8 @@ class Shop extends Component {
         const products = this.state.products.map(product => (
           <div className="Product-Card" key={product.id}>
               <div className="Product-Image">
-                <div className="Product-Flip">
-                  <div className="Product-Front"><img src={product.img} width='200px' height='200px' alt="product" /></div>
-                  {/* <div className="Product-Back"><img src="https://i.imgur.com/xG0rVGt.jpg" width='200px' height='200px' alt="product" /></div> */}
-                </div>
+                <div className="Product-Front"><img src={product.img} width='200px' height='200px' alt="product" /></div>
+                <div className="Product-Back"><img src="https://i.imgur.com/xG0rVGt.jpg" width='200px' height='200px' alt="product" /></div>
               </div>
                 
               <h3 className="Product-Name">{product.name}</h3>
