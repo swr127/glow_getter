@@ -3,8 +3,9 @@ import React from 'react'
 function Login(props) {
     return (
         <div className="Login">
-            <h3>LOGIN TO YOUR ACCOUNT</h3>
-            {/* <img src= find admin icon alt="user"/> */}
+            <div className="Login-Form">
+                <h3>LOGIN TO YOUR ACCOUNT</h3>
+                <img src="https://i.imgur.com/Sq8CNHF.png" width="40px" height="40px" alt="user"/>
                 <form onSubmit={props.handleLogin} >
                     <div>Username: </div>
                         <input 
@@ -26,9 +27,10 @@ function Login(props) {
                             onChange={props.handleChange}
                         /> <br />
 
-                        <button>login</button>
+                    <button>login</button>
                 </form>
             </div>
+        </div>
     )
 }
 export default Login
