@@ -104,7 +104,7 @@
 /* **************/
 
 /* **************
-// SHOP
+// SHOP 
 /* **************/
 
 .Shop-Products {
@@ -115,6 +115,38 @@
   margin: 10px;
 }
 
+/* **************
+// CART
+/* **************/
+
+.Cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%
+}
+
+.Cart-Instructions {
+  margin: 0 auto;
+  padding: 0px 0px 0px 30px;
+}
+
+.Cart-Products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.Cart-Empty {
+  text-align: center;
+}
+
+/* **************
+// PRODUCTS
+/* **************/
+
 .Product-Card {
   margin-top: 40px;
   margin-right: 48px;
@@ -123,36 +155,38 @@
 }
 
 .Product-Image {
-  transition-duration: 1s;
-  transform-style:preserve-3d;
+  transition: 1s ease;
+  transform-style: preserve-3d;
 }
 
 .Product-Image:hover {
-  transform:rotateY(180deg);
-  transition-duration: 1s;
+  transform: rotateY(180deg);
 }
 
 .Product-Front, .Product-Back {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .Product-Front {
-  width: 100%;
   position: absolute;
 }
 
 .Product-Back {
-  opacity: 1;
+  transform: rotateY(180deg);
 }
 
 .Product-Name {
   color: black;
   font-size: 16px;
   font-weight: 600;
-  margin: 0;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
 .Product-Price {
@@ -162,7 +196,3 @@
   margin: 0;
   padding: 5px 0px 5px 0px;
 }
-
-/* **************
-// CART
-/* **************/
