@@ -18,6 +18,33 @@
 // DESKTOP
 /* **************/
 
+.Header {
+  width: 100%;
+}
+
+.Header nav {
+  display: block;
+  background-color: #dfe6ec;
+  height: 35px;
+  width: 100%;
+}
+
+.Logo {
+  color: black;
+  font-size: 20px;
+  float: left;
+  height: 28px;
+  padding: 5px 0px 5px 10px;
+  width: 28px;
+}
+
+.Title {
+  color: black;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
 /* **************
 // MOBILE
 /* **************/

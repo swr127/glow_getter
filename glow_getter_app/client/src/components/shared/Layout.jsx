@@ -37,8 +37,8 @@ class Layout extends Component {
     return (
         <div className="Layout">
             <div className="Header">
-                <Link clasName='title' to='/' style={{ textDecoration: 'none' }}>GLOW GETTER</Link>
-                <div>
+                <nav className="Nav">
+                    <NavLink className="Logo" to="/" style={{ textDecoration: 'none' }}>GG</NavLink>
                     {this.props.currentUser ? 
                     <div>
                         {this.props.currentUser.username}
@@ -57,7 +57,8 @@ class Layout extends Component {
                         <NavLink to="/login">Login</NavLink>
                         <NavLink to="/register">Register</NavLink>
                     </div> }             
-                </div>
+                </nav>
+            <Link className="Title" to="/" style={{ textDecoration: 'none' }}>GLOW GETTER</Link>
             </div>
 
             {this.props.children}
