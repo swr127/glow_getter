@@ -14772,3 +14772,10 @@ Processing by UsersController#cart as HTML
 Completed 200 OK in 6ms (Views: 2.5ms | ActiveRecord: 0.9ms | Allocations: 2149)
 
 
+Started GET "/products" for ::1 at 2020-03-11 09:36:39 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 1860)
+
+

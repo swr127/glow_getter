@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import HamburgerMenu from 'react-hamburger-menu'
 
 class Layout extends Component {
@@ -37,7 +37,7 @@ class Layout extends Component {
     return (
         <div className="Layout">
             <div className="Header">
-                <h1>GLOW GETTER</h1>
+                <Link clasName='title' to='/' style={{ textDecoration: 'none' }}>GLOW GETTER</Link>
                 <div>
                     {this.props.currentUser ? 
                     <div>
