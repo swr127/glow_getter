@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { viewCart } from '../../apiConfig'
 
 class Cart extends Component {
@@ -38,7 +39,7 @@ class Cart extends Component {
         return (
           <div className="Cart">
             <div className="Cart-Instructions">
-              <h1>Your Cart!</h1>
+              <h1>Ready to checkout?</h1>
               <h4>Place instructions here</h4>
               <ul>
                 <li>Step One: text text text</li>
@@ -54,7 +55,12 @@ class Cart extends Component {
             <div className="Cart-Box">
               { products.length > 0 ?
                 <div className="Cart-Products"> {products} </div> :
-                <h1 className="Cart-Empty">>You're cart is empty!</h1>
+                <div className="Cart-Empty">
+                  <h1>You're cart is empty!</h1>
+                  <Link to="/shop">
+                    <button type="button">get shopping>></button>
+                  </Link>
+                </div>
               }
             </div>
           </div>

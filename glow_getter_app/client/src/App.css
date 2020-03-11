@@ -129,6 +129,11 @@
 .Cart-Instructions {
   margin: 0 auto;
   padding: 0px 0px 0px 30px;
+  width: 50%;
+}
+
+.Cart-Box {
+  width: 50%;
 }
 
 .Cart-Products {
@@ -141,6 +146,7 @@
 
 .Cart-Empty {
   text-align: center;
+  padding-top: 150px;
 }
 
 /* **************
