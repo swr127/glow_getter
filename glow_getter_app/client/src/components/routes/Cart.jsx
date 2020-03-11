@@ -25,8 +25,8 @@ class Cart extends Component {
         const products = this.state.products.map(product => (
             <div key={product.id}>
                 <img src={product.img} width='200px' height='200px' alt="product" /> <br />
-                {product.name} <br/>
-                ${product.price} <br />
+                <h4>{product.name}</h4> <br/>
+                <h5>{product.price}</h5> <br />
                 <button name={product.id} onClick={this.props.handleCart}>Remove from Cart</button>
             </div>
         ))

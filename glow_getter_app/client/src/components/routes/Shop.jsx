@@ -23,20 +23,27 @@ class Shop extends Component {
 
     render() {
         const products = this.state.products.map(product => (
-          <div key={product.id}>
-                <img src={product.img} width='200px' height='200px' alt="product" /> <br />
-                {product.name} <br/>
-                ${product.price} <br />
+          <div className="Product-Card" key={product.id}>
+              <div className="Product-Image">
+                <div className="Product-Flip">
+                  <div className="Product-Front"><img src={product.img} width='200px' height='200px' alt="product" /></div>
+                  {/* <div className="Product-Back"><img src="https://i.imgur.com/xG0rVGt.jpg" width='200px' height='200px' alt="product" /></div> */}
+                </div>
+              </div>
+                
+              <h3 className="Product-Name">{product.name}</h3>
+              <h4 className="Product-Price">${product.price}</h4>
             
               {this.props.currentUser ?
                 
                 <button name={product.id} onClick={this.props.handleCart}>Add to Cart</button> :
                 <button onClick={this.props.handleRedirect}>Add to Cart</button>
               }
-            </div>
+          </div>
         ))
+        
         return (
-          <div className="Shop">
+          <div className="Shop-Products">
               {products}
           </div>
         )

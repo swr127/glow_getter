@@ -107,6 +107,59 @@
 // SHOP
 /* **************/
 
+.Shop-Products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.Product-Card {
+  margin-top: 40px;
+  margin-right: 48px;
+  margin-left: 46px;
+  text-align: left;
+}
+
+.Product-Image {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.Product-Flip {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.Product-Image:hover .Product-Flip {
+  transform: rotateY(180deg);
+}
+
+.Product-Front, .Product-Back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.Product-Back {
+  transform: rotateY(180deg);
+}
+
+.Product-Name {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.Product-Price {
+  color: #6d7174;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 5px 0px 5px 0px;
+}
+
 /* **************
 // CART
 /* **************/
