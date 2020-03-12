@@ -46,7 +46,7 @@ class Layout extends Component {
 
                     {this.props.currentUser ?
                         <div className="Logged-In">
-                            {this.props.currentUser.username}
+                            Hello, {this.props.currentUser.username}!
                             <button onClick={this.props.logout}>logout</button> 
                         
                             {this.state.open && (
