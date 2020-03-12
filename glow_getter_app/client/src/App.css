@@ -280,6 +280,21 @@
   margin: 10px;
 }
 
+.Add-Button {
+  border: 2;
+  border-color: white;
+  background-color: #54b02b;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  height: 30px;
+  width: 100px;
+}
+
+.Add-Button:hover {
+  font-weight: bolder;
+}
+
 /* **************
 // CART
 /* **************/

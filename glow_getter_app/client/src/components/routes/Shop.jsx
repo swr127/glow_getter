@@ -34,8 +34,8 @@ class Shop extends Component {
             
               {this.props.currentUser ?
                 
-                <button name={product.id} onClick={this.props.handleCart}>Add to Cart</button> :
-                <button onClick={this.props.handleRedirect}>Add to Cart</button>
+                <button className="Add-Button" name={product.id} onClick={this.props.handleCart}>ADD TO CART</button> :
+                <button className="Add-Button" onClick={this.props.handleRedirect}>ADD TO CART</button>
               }
           </div>
         ))
