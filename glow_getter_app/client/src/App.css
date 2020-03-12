@@ -98,6 +98,14 @@
   height: 800px;
 }
 
+.Login h1 {
+  color: black;
+  font-size: 42px;
+  font-weight: 400;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
 .Login h3 {
   color: black;
   font-size: 22px;
@@ -129,7 +137,7 @@
   width: 220px;
 }
 
-.Login button {
+.Login-Button {
   border: 1;
   border-radius: 10%;
   border-color: white;
@@ -142,21 +150,31 @@
   margin-top: 40px;
 }
 
-.Login button:hover {
+.Login-Button:hover {
   font-weight: bold;
 }
 
-/* **************
-// LOGIN CONFIRM
-/* **************/
+.Shop-Button {
+  border: 1;
+  border-radius: 8%;
+  border-color: white;
+  background-color: #54b02b;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  width: 120px;
+  margin-top: 40px;
+}
+
+.Shop-Button:hover {
+  font-weight: bold;
+}
 
 /* **************
 // REGISTER
 /* **************/
 
-/* **************
-// REGISTER CONFIRM
-/* **************/
 
 /* **************
 // SHOP 
