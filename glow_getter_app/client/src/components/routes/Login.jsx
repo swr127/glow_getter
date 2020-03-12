@@ -5,9 +5,9 @@ function Login(props) {
         <div className="Login">
             <div className="Login-Form">
                 <h3>LOGIN TO YOUR ACCOUNT</h3>
-                <img src="https://i.imgur.com/Sq8CNHF.png" width="40px" height="40px" alt="user"/>
+                <img src="https://i.imgur.com/Sq8CNHF.png" width="50px" height="50px" alt="user"/>
                 <form onSubmit={props.handleLogin} >
-                    <div>Username: </div>
+                    <div className="Username">Username</div>
                         <input 
                             required
                             placeholder="Enter your username"
@@ -17,10 +17,10 @@ function Login(props) {
                             onChange={props.handleChange}
                         />
                       
-                    <div>Password: </div>
+                    <div className="Password">Password</div>
                         <input
                             required
-                            placeholder="Enter your password (must be 6 characters)"
+                            placeholder="Enter your password"
                             name="password"
                             type="password"
                             value={props.formData.password}
@@ -33,4 +33,5 @@ function Login(props) {
         </div>
     )
 }
+
 export default Login
