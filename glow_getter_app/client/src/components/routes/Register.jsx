@@ -3,20 +3,21 @@ import React from 'react'
 function Register(props) {
     return (
         <div className="Register">
+            <div className="Register-Form">
             <h3>SIGN UP FOR AN ACCOUNT</h3>
-            {/* <p> placeholder for marketing text</p> */}
+            <p> Get 20% off + FREE SHIPPING <br /> on your first purchase of $100+</p>
             <form onSubmit={props.handleRegister} >
-                <div>Username: </div>
+                <div className="Username">Username </div>
                     <input 
                         required
-                        placeholder="Create new username"
+                        placeholder="Create username"
                         name="username"
                         type="text"
                         value={props.formData.username}
                         onChange={props.handleChange}
                     />
 
-                <div>Email: </div>
+                <div className="Email">Email </div>
                     <input 
                         required
                         placeholder="Enter your email address"
@@ -26,18 +27,20 @@ function Register(props) {
                         onChange={props.handleChange}
                     />
                 
-                <div>Password: </div>
+                <div className="Password">Password </div>
                     <input
                         required
-                        placeholder="Create password (must be 6 characters)"
+                        placeholder="Create password (minimum 6 characters)"
                         name="password"
                         type="password"
                         value={props.formData.password}
                         onChange={props.handleChange}
                     /> <br />
 
-                    <button>signup</button>
+                    <button className="Register-Button">sign up</button>
+                    <p className="Disclaimer">You will not be opted into marking emails upon providing your email address</p>
             </form>
+            </div>
         </div>
     )
 }
