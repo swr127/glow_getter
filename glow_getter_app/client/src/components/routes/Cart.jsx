@@ -32,7 +32,7 @@ class Cart extends Component {
                 
             <h3 className="Product-Name">{product.name}</h3>
             <h4 className="Product-Price">${product.price}</h4>
-            <button name={product.id} onClick={this.props.handleCart}>Remove from Cart</button>
+            <button className="Remove-Button" name={product.id} onClick={this.props.handleCart}>REMOVE FROM CART</button>
             
           </div>
         ))
@@ -40,17 +40,15 @@ class Cart extends Component {
           <div className="Cart">
             <div className="Cart-Instructions">
               <h1>Ready to checkout?</h1>
-              <h4>Place instructions here</h4>
               <ul>
-                <li>Step One: text text text</li>
-                <li>Step Two: text text text</li>
-                <li>Step Three: text text text</li>
-                <li>Step Four: text text text</li>
-                <li>Step Five: text text text</li>
-                <li>Step Six: text text text</li>
+                <li><b>Step One:</b> Review your cart and adjust items as necessary</li>
+                <li><b>Step Two:</b> Proceed to checkout</li>
+                <li><b>Step Three:</b> Provide billing and shipping info</li>
+                <li><b>Step Four:</b> Place order</li>
+                <li><b>Step Five:</b> Delivery!</li>
               </ul>
               <img src="https://i.imgur.com/beGText.jpg" width='550px' height='350px' alt="girls" /> <br />
-              <p>#glowgetters via Instagram</p>
+              <p className="Social-Media">#glowgetters via Instagram</p>
             </div>
             <div className="Cart-Box">
               { products.length > 0 ?
@@ -58,7 +56,7 @@ class Cart extends Component {
                 <div className="Cart-Empty">
                   <h1>You're cart is empty!</h1>
                   <Link to="/shop">
-                    <button type="button">get shopping>></button>
+                    <button className="Shop-Button">get shopping</button>
                   </Link>
                 </div>
               }

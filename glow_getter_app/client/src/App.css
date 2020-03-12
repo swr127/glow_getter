@@ -308,8 +308,22 @@
 
 .Cart-Instructions {
   margin: 0 auto;
-  padding: 0px 0px 0px 30px;
+  padding: 0px 0px 0px 60px;
   width: 50%;
+  text-align: left;
+}
+
+.Cart ul {
+  list-style: none;
+  padding-left: 2px;
+}
+
+.Cart li {
+  padding-top: 5px;
+}
+
+.Social-Media {
+  font-size: 12px;
 }
 
 .Cart-Box {
@@ -327,6 +341,21 @@
 .Cart-Empty {
   text-align: center;
   padding-top: 150px;
+}
+
+.Remove-Button {
+  border: 2;
+  border-color: white;
+  background-color: #54b02b;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  height: 30px;
+  width: 140px;
+}
+
+.Remove-Button:hover {
+  font-weight: bolder;
 }
 
 /* **************
