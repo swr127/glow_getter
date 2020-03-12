@@ -213,6 +213,8 @@
 }
 
 .Login input {
+  border: 1;
+  border-color: darkgray;
   height: 20px;
   width: 220px;
 }
@@ -299,6 +301,8 @@
 }
 
 .Register input {
+  border: 1;
+  border-color: darkgray;
   height: 20px;
   width: 220px;
 }

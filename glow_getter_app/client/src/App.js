@@ -9,7 +9,8 @@ import LoginConfirm from './components/routes/LoginConfirm'
 import Register from './components/routes/Register'
 import RegisterConfirm from './components/routes/RegisterConfirm'
 import Cart from './components/routes/Cart'
-import './App.css';
+import './App.css'
+import './Mobile.css'
 
 class App extends Component {
   constructor(props) {

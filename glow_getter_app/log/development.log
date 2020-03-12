@@ -19037,3 +19037,90 @@ Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1705)
 Completed 200 OK in 25ms (Views: 12.7ms | ActiveRecord: 10.7ms | Allocations: 3392)
 
 
+Started POST "/auth/login" for ::1 at 2020-03-12 13:25:49 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"swr123", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"swr123", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swr123"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 249ms (Views: 2.2ms | ActiveRecord: 0.9ms | Allocations: 1005)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-12 13:28:36 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 850)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-12 13:28:42 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 847)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-12 13:30:33 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 847)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-12 13:30:33 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 847)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-12 13:30:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.1ms | Allocations: 847)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-12 13:30:48 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 1.2ms | Allocations: 847)
+
+
+Started POST "/auth/login" for ::1 at 2020-03-12 13:52:36 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"swr123", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"swr123", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swr123"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 247ms (Views: 1.9ms | ActiveRecord: 0.8ms | Allocations: 1004)
+
+
+Started GET "/products" for ::1 at 2020-03-12 13:59:20 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.9ms | Allocations: 1948)
+
+
+Started POST "/auth/login" for ::1 at 2020-03-12 14:00:17 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"swr123", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"swr123", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "swr123"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:6:in `login'
+Completed 200 OK in 240ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 949)
+
+
+Started GET "/auth/verify" for ::1 at 2020-03-12 14:00:55 -0400
+Started GET "/products" for ::1 at 2020-03-12 14:00:55 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:19:in `authorize_request'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 1.1ms | Allocations: 850)
+
+
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 1.0ms | Allocations: 1948)
+
+

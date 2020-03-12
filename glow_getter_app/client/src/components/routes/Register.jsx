@@ -38,7 +38,6 @@ function Register(props) {
                         /> <br />
 
                     <button className="Register-Button">sign up</button>
-                    <p className="Disclaimer">You will not be opted into marking emails upon providing your email address</p>
                 </form>
             </div>
         </div>

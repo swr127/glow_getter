@@ -53,7 +53,7 @@ class Layout extends Component {
                             <ul className="Hamburger-Dropdown-In">
                                 <a href="/"><li>Home</li></a>
                                 <a href="/shop"><li>Shop</li></a>
-                                <a href="/cart"><li>View My Cart</li></a>
+                                <a href="/cart"><li>My Cart</li></a>
                             </ul>
                              )}
                         </div>
