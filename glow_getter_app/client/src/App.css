@@ -100,9 +100,9 @@
 
 .Login h1 {
   color: black;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 400;
-  padding-top: 100px;
+  padding-top: 110px;
   padding-bottom: 10px;
 }
 
@@ -184,7 +184,7 @@
 
 .Register h1 {
   color: black;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 400;
   padding-top: 100px;
   padding-bottom: 10px;
@@ -194,7 +194,7 @@
   color: black;
   font-size: 22px;
   padding-top: 40px;
-  /* padding-bottom: 10px; */
+  padding-bottom: 10px;
 }
 
 .Register-Form {
@@ -223,6 +223,10 @@
 
 .Register p {
   margin: 0 
+}
+
+.Offer {
+  font-size: 18px;
 }
 
 .Register-Button {
