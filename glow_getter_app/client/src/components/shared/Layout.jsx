@@ -50,7 +50,7 @@ class Layout extends Component {
                             <button onClick={this.props.logout}>Logout</button> 
                         
                             {this.state.open && (
-                            <ul>
+                            <ul className="Hamburger-Dropdown">
                                 <a href="/"><li>Home</li></a>
                                 <a href="/shop"><li>Shop</li></a>
                                 <a href="/cart"><li>View My Cart</li></a>
@@ -60,11 +60,11 @@ class Layout extends Component {
                     :
                         <div className="Logged-Out">
                             {this.state.open && (
-                            <ul>
+                            <ul className="Hamburger-Dropdown">
                                 <a href="/"><li>Home</li></a>
                                 <a href="/shop"><li>Shop</li></a>
                                 <a href="/login"><li>Login</li></a>
-                                <a href="/login"><li>Register</li></a>
+                                <a href="/register"><li>Register</li></a>
                             </ul>
                              )}
                         </div>

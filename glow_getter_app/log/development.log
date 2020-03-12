@@ -18570,3 +18570,31 @@ Filter chain halted as :authorize_request rendered or redirected
 Completed 401 Unauthorized in 5ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 132)
 
 
+Started GET "/products" for ::1 at 2020-03-12 11:52:09 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 47ms (Views: 30.8ms | ActiveRecord: 1.8ms | Allocations: 1948)
+
+
+Started GET "/products" for ::1 at 2020-03-12 11:58:37 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.9ms | Allocations: 1948)
+
+
+Started GET "/products" for ::1 at 2020-03-12 12:01:56 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 1860)
+
+
+Started GET "/products" for ::1 at 2020-03-12 12:03:01 -0400
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.5ms | Allocations: 1860)
+
+

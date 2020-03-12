@@ -30,7 +30,8 @@
 }
 
 .Title {
-  padding-top: 10px;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 
 .Title-Text {
@@ -67,7 +68,27 @@
   outline: 0;
 }
 
-.container { position: relative; display: inline-block; } .button { padding: 0; width: 50px; border: 0; background-color: #fff; color: #333; cursor: pointer; outline: 0; font-size: 40px; }
+.Hamburger-Dropdown {
+  margin-top: 40px;
+  height: 200px;
+  position: absolute;
+  right: 20px;
+}
+
+.Hamburger-Dropdown li {
+  padding: 5px;
+}
+
+.Hamburger-Dropdown li:hover {
+  color: darkgray;
+  font-weight: 600; 
+}
+
+.Hamburger-Dropdown a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
 
 /* **************
 // FOOTER
