@@ -74,6 +74,7 @@ class Layout extends Component {
                 <div className="Title">
                     <Link className="Title-Text" to="/" style={{ textDecoration: 'none' }}>GLOW GETTER</Link>
                 </div>
+                <br />
             </div>
 
             {this.props.children}

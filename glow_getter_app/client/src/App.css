@@ -77,7 +77,7 @@
 .Home {
   width: 100%;
   margin: auto;
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 10px 0px;
 }
 
 .Slide div {
@@ -89,12 +89,6 @@
 
 /* **************
 // LOGIN
-/* **************/
-
-
-
-/* **************
-// LOGIN CONFIRM
 /* **************/
 
 .Login {
@@ -114,6 +108,10 @@
   width: 550px;
   transform: translate(-50%, -50%);
 }
+
+/* **************
+// LOGIN CONFIRM
+/* **************/
 
 /* **************
 // REGISTER
