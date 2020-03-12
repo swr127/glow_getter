@@ -15,7 +15,7 @@
 }
 
 /* **************
-// LAYOUT
+// HEADER
 /* **************/
 
 .Header {
@@ -59,8 +59,19 @@
 }
 
 .Hamburger-Button {
+  background-color: #dfe6ec;
+  border: none;
+  font-size: 22px;
   float: right;
+  cursor: pointer;
+  outline: 0;
 }
+
+.container { position: relative; display: inline-block; } .button { padding: 0; width: 50px; border: 0; background-color: #fff; color: #333; cursor: pointer; outline: 0; font-size: 40px; }
+
+/* **************
+// FOOTER
+/* **************/
 
 .Footer {
   color: black;
@@ -142,6 +153,7 @@
   border-radius: 10%;
   border-color: white;
   background-color: #54b02b;
+  cursor: pointer;
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -159,6 +171,7 @@
   border-radius: 8%;
   border-color: white;
   background-color: #54b02b;
+  cursor: pointer;
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -234,6 +247,7 @@
   border-radius: 10%;
   border-color: white;
   background-color: #54b02b;
+  cursor: pointer;
   color: white;
   font-size: 14px;
   font-weight: 600;
@@ -249,23 +263,6 @@
 .Disclaimer {
   font-size: 10px;
   padding-top: 10px;
-}
-
-.Shop-Button {
-  border: 1;
-  border-radius: 8%;
-  border-color: white;
-  background-color: #54b02b;
-  color: white;
-  font-size: 14px;
-  font-weight: 600;
-  height: 40px;
-  width: 120px;
-  margin-top: 40px;
-}
-
-.Shop-Button:hover {
-  font-weight: bold;
 }
 
 /* **************

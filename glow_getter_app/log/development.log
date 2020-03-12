@@ -18564,3 +18564,9 @@ Filter chain halted as :authorize_request rendered or redirected
 Completed 401 Unauthorized in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 132)
 
 
+Started GET "/cart" for ::1 at 2020-03-12 11:36:42 -0400
+Processing by UsersController#cart as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 132)
+
+
