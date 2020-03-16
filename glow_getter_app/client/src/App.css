@@ -308,7 +308,8 @@
 }
 
 .Register p {
-  margin: 0 
+  font-size: 18px;
+  margin: 0; 
 }
 
 .Offer {
@@ -331,11 +332,6 @@
 
 .Register-Button:hover {
   font-weight: bold;
-}
-
-.Disclaimer {
-  font-size: 10px;
-  padding-top: 10px;
 }
 
 /* **************
@@ -382,6 +378,11 @@
   padding: 0px 0px 0px 60px;
   width: 50%;
   text-align: left;
+}
+
+.Cart-Instructions img {
+  width: 550px;
+  height: 350px;
 }
 
 .Cart ul {

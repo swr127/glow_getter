@@ -47,7 +47,7 @@ class Cart extends Component {
                 <li><b>Step Four:</b> Place order</li>
                 <li><b>Step Five:</b> Delivery!</li>
               </ul>
-              <img src="https://i.imgur.com/beGText.jpg" width='550px' height='350px' alt="girls" /> <br />
+              <img src="https://i.imgur.com/beGText.jpg" alt="girls" /> <br />
               <p className="Social-Media">#glowgetters via Instagram</p>
             </div>
             <div className="Cart-Box">

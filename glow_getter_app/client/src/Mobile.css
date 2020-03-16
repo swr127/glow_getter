@@ -1,8 +1,5 @@
 @media screen and (max-width: 640px) {
-
-/* **************
-// HEADER
-/* **************/
+  
   .Title {
     padding-top: 25px;
     padding-bottom: 10px;
@@ -45,35 +42,17 @@
     font-weight: 600;
   }
   
-  /* **************
-  // FOOTER
-  /* **************/
-  
   .Footer {
     font-size: 12px;
-    margin-top: 2px;
+    margin-top: 5px;
     padding: 2px;
-  }
-  
-  /* **************
-  // HOME
-  /* **************/
-  
-  .Home {
-    width: 100%;
-    margin: auto;
-    padding: 0px 0px 10px 0px;
   }
   
   .Slide div {
     background-position: center;
     height: 600px;
   }
-  
-  /* **************
-  // LOGIN
-  /* **************/
-  
+
   .Login {
     background-position: center;
     height: 600px;
@@ -104,10 +83,6 @@
     height: 20px;
     width: 180px;
   }
-
-  /* **************
-  // REGISTER
-  /* **************/
   
   .Register {
     background-position: center;
@@ -138,7 +113,7 @@
   
   .Register input {
     height: 20px;
-    width: 180px;
+    width: 210px;
   }
   
   .Register p {
@@ -146,172 +121,67 @@
     margin: 0 
   }
   
-  .Register-Button {
-    border: 1;
-    border-radius: 10%;
-    border-color: white;
-    background-color: #54b02b;
-    cursor: pointer;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    height: 40px;
-    width: 80px;
-    margin-top: 20px;
-  }
-  
-  .Register-Button:hover {
-    font-weight: bold;
-  }
-  
-  .Disclaimer {
-    font-size: 10px;
-    padding-top: 10px;
-  }
-  
-  /* **************
-  // SHOP 
-  /* **************/
-  
   .Shop-Products {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
-  
-  .Add-Button {
-    border: 2;
-    border-color: white;
-    background-color: #54b02b;
-    cursor: pointer;
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-    height: 30px;
-    width: 100px;
-  }
-  
-  .Add-Button:hover {
-    font-weight: bolder;
-  }
-  
-  /* **************
-  // CART
-  /* **************/
   
   .Cart {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%
+    flex-direction: column;
+    margin: 0 auto;
   }
   
   .Cart-Instructions {
-    margin: 0 auto;
-    padding: 0px 0px 0px 60px;
-    width: 50%;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .Cart-Instructions h1, .Cart-Empty h1 {
+    font-size: 22px;
+  }
+  
+  .Cart-Instructions img {
+    width: 300px;
+    height: 200px;
     text-align: left;
   }
-  
-  .Cart ul {
-    list-style: none;
-    padding-left: 2px;
-  }
-  
-  .Cart li {
-    padding-top: 5px;
-  }
-  
-  .Social-Media {
-    font-size: 12px;
-  }
-  
+
   .Cart-Box {
-    width: 50%;
+    width: 100%;
   }
-  
-  .Cart-Products {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
-  }
-  
+
   .Cart-Empty {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
+}
+
+@media screen and (max-width: 1050px) {
   
-  .Remove-Button {
-    border: 2;
-    border-color: white;
-    background-color: #54b02b;
-    cursor: pointer;
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-    height: 30px;
-    width: 140px;
-  }
-  
-  .Remove-Button:hover {
-    font-weight: bolder;
-  }
-  
-  /* **************
-  // PRODUCTS
-  /* **************/
-  
-  .Product-Card {
-    margin-top: 40px;
-    margin-right: 48px;
-    margin-left: 46px;
-    text-align: left;
-  }
-  
-  .Product-Image {
-    transition: 1s ease;
-    transform-style: preserve-3d;
-  }
-  
-  .Product-Image:hover {
-    transform: rotateY(180deg);
-  }
-  
-  .Product-Front, .Product-Back {
-    height: 100%;
-    width: 100%;
+  .Cart {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    flex-direction: column;
+    margin: 0 auto;
   }
   
-  .Product-Front {
-    position: absolute;
+  .Cart-Instructions {
+    padding: 10px;
+    width: 100%;
   }
-  
-  .Product-Back {
-    transform: rotateY(180deg);
+
+  .Cart-Instructions h1, .Cart-Empty h1 {
+    font-size: 24px;
   }
-  
-  .Product-Name {
-    color: black;
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 6px;
-    margin-bottom: 0;
+
+  .Cart-Box {
+    width: 100%;
   }
-  
-  .Product-Price {
-    color: #6d7174;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0;
-    padding: 5px 0px 5px 0px;
+
+  .Cart-Empty {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
