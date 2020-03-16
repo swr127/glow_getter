@@ -51,9 +51,9 @@ class Layout extends Component {
                         
                             {this.state.open && (
                             <ul className="Hamburger-Dropdown-In">
-                                <a href="/"><li>Home</li></a>
-                                <a href="/shop"><li>Shop</li></a>
-                                <a href="/cart"><li>My Cart</li></a>
+                                <NavLink to="/"><li>Home</li></NavLink>
+                                <NavLink to="/shop"><li>Shop</li></NavLink>
+                                <NavLink to="/cart"><li>My Cart</li></NavLink>
                             </ul>
                              )}
                         </div>
@@ -61,10 +61,10 @@ class Layout extends Component {
                         <div className="Logged-Out">
                             {this.state.open && (
                             <ul className="Hamburger-Dropdown-Out">
-                                <a href="/"><li>Home</li></a>
-                                <a href="/shop"><li>Shop</li></a>
-                                <a href="/login"><li>Login</li></a>
-                                <a href="/register"><li>Register</li></a>
+                                <NavLink to="/"><li>Home</li></NavLink>
+                                <NavLink to="/shop"><li>Shop</li></NavLink>
+                                <NavLink to="/login"><li>Login</li></NavLink>
+                                <NavLink to="/register"><li>Register</li></NavLink>
                             </ul>
                              )}
                         </div>
@@ -81,7 +81,8 @@ class Layout extends Component {
 
             <div className="Footer">
                 <hr />
-                <p>&copy; 2020 SAMANTHA RUSSELL  |  GITHUB   LINKEDIN</p>
+                <p>&copy; 2020 SAMANTHA RUSSELL  |  <a href="https://git.generalassemb.ly/swr127">GITHUB</a>             
+                <a href="https://www.linkedin.com/in/swr127/">LINKEDIN</a></p>
             </div>
         </div>
     )}
