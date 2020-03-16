@@ -81,8 +81,10 @@ class Layout extends Component {
 
             <div className="Footer">
                 <hr />
-                <p>&copy; 2020 SAMANTHA RUSSELL  |  <a href="https://git.generalassemb.ly/swr127">GITHUB</a>             
-                <a href="https://www.linkedin.com/in/swr127/">LINKEDIN</a></p>
+                <p>&copy; 2020 SAMANTHA RUSSELL  |  
+                    <a href="https://github.com/swr127"><img src="https://i.imgur.com/5KK8yEl.png" width="30px" height="30px" /></a>            
+                    <a href="https://www.linkedin.com/in/swr127/"><img src="https://i.imgur.com/Wrxz7wH.png" width="30px" height="30px" /></a>
+                </p>
             </div>
         </div>
     )}
