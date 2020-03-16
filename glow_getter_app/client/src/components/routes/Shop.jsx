@@ -14,7 +14,6 @@ class Shop extends Component {
         try {
           const response = await viewProducts()
           this.setState({ products: response })
-          console.log(response)
 
         } catch (error) {
           console.log(error)

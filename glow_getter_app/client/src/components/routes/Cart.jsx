@@ -15,8 +15,7 @@ class Cart extends Component {
         try {
           const response = await viewCart()
           this.setState({ products: response })
-          console.log(response)
-
+          
         } catch (error) {
           console.log(error)
         }
