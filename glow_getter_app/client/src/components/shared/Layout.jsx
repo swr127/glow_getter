@@ -43,7 +43,6 @@ class Layout extends Component {
                 <nav className="Nav" ref={this.nav}>
                     <NavLink className="Logo" to="/" style={{ textDecoration: 'none' }}>GG</NavLink>
                     <button className="Hamburger-Button" type="button" onClick={this.handleClick}>☰</button>
-
                     {this.props.currentUser ?
                         <div className="Logged-In">
                             Hello, {this.props.currentUser.username}!
@@ -69,8 +68,7 @@ class Layout extends Component {
                              )}
                         </div>
                     }
-                </nav>
-                
+                </nav> 
                 <div className="Title">
                     <Link className="Title-Text" to="/" style={{ textDecoration: 'none' }}>GLOW GETTER</Link>
                 </div>
