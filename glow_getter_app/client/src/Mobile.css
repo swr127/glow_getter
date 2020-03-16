@@ -1,5 +1,5 @@
 @media screen and (max-width: 640px) {
-  
+
   .Title {
     padding-top: 25px;
     padding-bottom: 10px;
@@ -12,6 +12,7 @@
   .Hamburger-Dropdown-In {
     font-size: 12px;
     right: 5px;
+    width: 60px;
   }
   
   .Hamburger-Dropdown-In li {
@@ -26,6 +27,7 @@
   .Hamburger-Dropdown-Out {
     font-size: 12px;
     right: 5px;
+    width: 60px;
   }
   
   .Hamburger-Dropdown-Out li {
