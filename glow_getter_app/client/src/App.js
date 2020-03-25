@@ -91,8 +91,8 @@ class App extends Component {
     event.preventDefault()
     const product = event.target.name
     const response = await removeProductFromCart(product)
-    console.log(response)
     this.props.history.push("/cart")
+    console.log(response)
     // window.location.reload()
   }
 
